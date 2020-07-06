@@ -1,0 +1,28 @@
+html,
+body {
+    font-size: 10px;
+}
+
+body {
+    font-family: '微軟正黑體', 'sans-serif';
+    margin-bottom: 8rem;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    vertical-align: middle;
+}
+
+.row-pd-helf {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    div[class^='col'] {
+        padding: 7.5px;
+    }
+}
