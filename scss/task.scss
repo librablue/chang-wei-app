@@ -108,7 +108,7 @@
 }
 
 .article {
-	padding: 20px;
+	padding: 20px 15px;
 	.nav {
 		display: flex;
 		justify-content: space-between;
@@ -117,6 +117,13 @@
 		.title {
 			font-size: 2rem;
 			font-weight: 700;
+			flex-grow: 8;
+			text-align: center;
+		}
+		.img-action {
+			width: 32px;
+			padding: 0 4px;
+			margin-right: 4px;
 		}
 	}
 	h1 {
@@ -142,10 +149,10 @@
 	}
 
 	.restrict-block {
-        position: relative;
-        margin-top: -200px;
-        padding: 16rem 0 2.6rem;
-        background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #fff 70%);
+		position: relative;
+		margin-top: -200px;
+		padding: 16rem 0 2.6rem;
+		background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #fff 70%);
 	}
 
 	.restrict-toast {
@@ -163,15 +170,71 @@
 	}
 }
 
+.word-list {
+	list-style-type: none;
+	padding: 10px;
+	margin: 0;
+	font-size: 1.6rem;
+	.title-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 8px;
+		.prefix,
+		.word {
+			font-weight: 700;
+			flex-grow: 8;
+			text-align: center;
+			margin-right: 10px;
+		}
+		.right {
+			display: flex;
+			justify-content: space-between;
+			width: 90px;
+		}
+		.img-action {
+			width: 32px;
+			padding: 0 4px;
+		}
+	}
+	.kk-row {
+		padding-left: 2.6rem;
+		color: #999;
+		font-size: 1.4rem;
+		margin-bottom: 8px;
+	}
+	.meaning-row {
+		padding-left: 2.6rem;
+		font-size: 1.6rem;
+		margin-bottom: 8px;
+	}
+	.sentence-row {
+        display: flex;
+        align-items: flex-start;
+		padding-left: 2.6rem;
+		.icon-speaker {
+			width: 32px;
+			padding: 0 4px;
+        }
+		.hant {
+			color: #999;
+		}
+		.highlight {
+			color: #00b99d;
+			font-weight: 700;
+		}
+	}
+}
+
 .alert-modal {
-    .modal-content { 
-        padding: 10px 0 0;
-    }
-    .cw-btn-block {
-        background-color: #fff;
-        color: #0DBBA1;
-        font-size: 1.8rem;
-        padding: 6px;
-        margin: 0;
-    }
+	.modal-content {
+		padding: 10px 0 0;
+	}
+	.cw-btn-block {
+		background-color: #fff;
+		color: #0dbba1;
+		font-size: 1.8rem;
+		padding: 6px;
+		margin: 0;
+	}
 }
