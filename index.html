@@ -1,201 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>首頁</title>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
-        <link rel="stylesheet" href="static/css/index.css" />
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="my-4">首頁</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>首頁</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+		<link rel="stylesheet" href="static/css/index.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="my-4">首頁</h1>
 
-            <!-- slider start -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://fakeimg.pl/1920x716/4866BF" />
-                        <a href="#" class="cw-btn cw-btn-round">開始學習</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://fakeimg.pl/1920x716/" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://fakeimg.pl/1920x716/" />
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <!-- slider end -->
+			<!-- slider start -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="https://fakeimg.pl/768x286/4866BF" />
+						<a href="#" class="cw-btn cw-btn-round">開始學習</a>
+					</div>
+					<div class="swiper-slide">
+						<img src="https://fakeimg.pl/1920x716/" />
+					</div>
+					<div class="swiper-slide">
+						<img src="https://fakeimg.pl/1920x716/" />
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- slider end -->
 
-            <!-- 類別選單 start -->
-            <div class="row row-pd-helf category-row">
-                <div class="col">
-                    <a href="#">
-                        <img src="static/image/block.png" alt="" />
-                        <div class="name">按主題學</div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="static/image/level.png" alt="" />
-                        <div class="name">按等級學</div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="static/image/video.png" alt="" />
-                        <div class="name">影音專區</div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="static/image/earphone.png" alt="" />
-                        <div class="name">聽力訓練</div>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#">
-                        <img src="static/image/note.png" alt="" />
-                        <div class="name">自訂課程</div>
-                    </a>
-                </div>
-            </div>
-            <!-- 類別選單 end -->
+			<!-- 類別選單 start -->
+			<div class="row row-pd-helf category-row">
+				<div class="col">
+					<a href="#">
+						<img src="static/image/block.png" alt="" />
+						<div class="name">按主題學</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="static/image/level.png" alt="" />
+						<div class="name">按等級學</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="static/image/video.png" alt="" />
+						<div class="name">影音專區</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="static/image/earphone.png" alt="" />
+						<div class="name">聽力訓練</div>
+					</a>
+				</div>
+				<div class="col">
+					<a href="#">
+						<img src="static/image/note.png" alt="" />
+						<div class="name">自訂課程</div>
+					</a>
+				</div>
+			</div>
+			<!-- 類別選單 end -->
 
-            <!-- 大家都在學 start -->
-            <div class="row justify-content-between align-items-center subtitle-row">
-                <div class="col-6">
-                    <h2>大家都在學</h2>
-                </div>
-                <div class="col-6 text-right">
-                    <a href="#" class="show-more">觀看全部 &gt;</a>
-                </div>
-            </div>
-            <div class="row row-pd-helf hot-row">
-                <div class="col-4">
-                    <img class="img-fluid" src="https://fakeimg.pl/128x128/" />
-                </div>
-                <div class="col-8">
-                    <h3>Japanese PM and IOC chief agree to postpone ...</h3>
-                    <p>因全球武漢肺炎(COVID-19)疫情情勢,日本首相安倍晉三(Shinzo ...</p>
-                    <div class="text-right">
-                        <span class="cw-tag tag-white">中級</span>
-                        <span class="cw-tag tag-white">國際新聞</span>
-                        <span class="cw-tag tag-white">時事</span>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-pd-helf hot-row">
-                <div class="col-4">
-                    <img class="img-fluid" src="https://fakeimg.pl/128x128/" />
-                </div>
-                <div class="col-8">
-                    <h3>Japanese PM and IOC chief agree to postpone ...</h3>
-                    <p>因全球武漢肺炎(COVID-19)疫情情勢,日本首相安倍晉三(Shinzo ...</p>
-                    <div class="text-right">
-                        <span class="cw-tag tag-white">中級</span>
-                        <span class="cw-tag tag-white">國際新聞</span>
-                        <span class="cw-tag tag-white">時事</span>
-                    </div>
-                </div>
-            </div>
-            <!-- 大家都在學 end -->
+			<!-- 大家都在學 start -->
+			<div class="row justify-content-between align-items-center subtitle-row">
+				<div class="col-6">
+					<h2>大家都在學</h2>
+				</div>
+				<div class="col-6 text-right">
+					<a href="#" class="show-more">觀看全部 &gt;</a>
+				</div>
+			</div>
+			<div class="row row-pd-helf hot-row">
+				<div class="col-4">
+					<img class="img-fluid" src="https://fakeimg.pl/256x256/" />
+				</div>
+				<div class="col-8">
+					<h3>Japanese PM and IOC chief agree to postpone ...</h3>
+					<p>因全球武漢肺炎(COVID-19)疫情情勢,日本首相安倍晉三(Shinzo ...</p>
+					<div class="tag-row">
+						<span class="tag-white">中級</span>
+						<span class="tag-white">國際新聞</span>
+						<span class="tag-white">時事</span>
+					</div>
+				</div>
+			</div>
+			<div class="row row-pd-helf hot-row">
+				<div class="col-4">
+					<img class="img-fluid" src="https://fakeimg.pl/256x256/" />
+				</div>
+				<div class="col-8">
+					<h3>Japanese PM and IOC chief agree to postpone ...</h3>
+					<p>因全球武漢肺炎(COVID-19)疫情情勢,日本首相安倍晉三(Shinzo ...</p>
+					<div class="tag-row">
+						<span class="tag-white">中級</span>
+						<span class="tag-white">國際新聞</span>
+						<span class="tag-white">時事</span>
+					</div>
+				</div>
+			</div>
+			<!-- 大家都在學 end -->
 
-            <a href="#" class="ribbon-link">深度學習，讓英文實力更上一層樓！</a>
+			<a href="#" class="ribbon-link">深度學習，讓英文實力更上一層樓！</a>
 
-            <!-- 深度學習 start -->
-            <div class="row justify-content-between align-items-center subtitle-row">
-                <div class="col-6">
-                    <h2>深度學習</h2>
-                </div>
-                <div class="col-6 text-right">
-                    <a href="#" class="show-more">觀看全部 &gt;</a>
-                </div>
-            </div>
-            <div class="row row-pd-helf learn-row">
-                <div class="col-6">
-                    <div class="learn-item">
-                        <img class="img-fluid" src="https://fakeimg.pl/256x168/" />
-                        <a href="#">打造英文文法力密集班</a>
-                    </div>
-                    <div class="intro">3堂課，共90分鐘</div>
-                </div>
-                <div class="col-6">
-                    <div class="learn-item">
-                        <img class="img-fluid" src="https://fakeimg.pl/256x168/" />
-                        <a href="#">新多益金色證書課程</a>
-                    </div>
-                    <div class="intro">6堂課，共180分鐘</div>
-                </div>
-                <div class="col-6">
-                    <div class="learn-item">
-                        <img class="img-fluid" src="https://fakeimg.pl/256x168/" />
-                        <a href="#">完勝大考英聽衝刺班</a>
-                    </div>
-                    <div class="intro">6堂課，共180分鐘</div>
-                </div>
-                <div class="col-6">
-                    <div class="learn-item">
-                        <img class="img-fluid" src="https://fakeimg.pl/256x168/" />
-                        <a href="#">學測必備七千單字包</a>
-                    </div>
-                    <div class="intro">5堂課，共150分鐘</div>
-                </div>
-            </div>
-            <!-- 深度學習 end -->
+			<!-- 深度學習 start -->
+			<div class="row justify-content-between align-items-center subtitle-row">
+				<div class="col-6">
+					<h2>深度學習</h2>
+				</div>
+				<div class="col-6 text-right">
+					<a href="#" class="show-more">觀看全部 &gt;</a>
+				</div>
+			</div>
+			<div class="row row-pd-helf learn-row">
+				<div class="col-6">
+					<a href="#" class="learn-item" data-toggle="modal" data-target="#offlineModal">
+						<img class="img-fluid" src="https://fakeimg.pl/512x336/?text=click" />
+						<span class="class-name">打造英文文法力密集班</span>
+					</a>
+					<div class="intro">3堂課，共90分鐘</div>
+				</div>
+				<div class="col-6">
+					<a href="#" class="learn-item" data-toggle="modal" data-target="#registModal">
+						<img class="img-fluid" src="https://fakeimg.pl/512x336/?text=click" />
+						<span class="class-name">新多益金色證書課程</span>
+					</a>
+					<div class="intro">6堂課，共180分鐘</div>
+				</div>
+				<div class="col-6">
+					<a href="#" class="learn-item" data-toggle="modal" data-target="#offlineModal">
+						<img class="img-fluid" src="https://fakeimg.pl/512x336/?text=click" />
+						<span class="class-name">完勝大考英聽衝刺班</span>
+					</a>
+					<div class="intro">6堂課，共180分鐘</div>
+				</div>
+				<div class="col-6">
+					<a href="#" class="learn-item" data-toggle="modal" data-target="#registModal">
+						<img class="img-fluid" src="https://fakeimg.pl/512x336/?text=click" />
+						<span class="class-name">學測必備七千單字包</span>
+					</a>
+					<div class="intro">5堂課，共150分鐘</div>
+				</div>
+			</div>
+			<!-- 深度學習 end -->
 
-            <a href="#" class="lind-ad">
-                <img class="img-fluid img-round" src="https://fakeimg.pl/440x110/" />
-            </a>
-        </div>
+			<a href="#" class="lind-ad">
+				<img class="img-fluid img-round" src="https://fakeimg.pl/768x192/" />
+			</a>
+		</div>
 
-        <footer>
-            <div class="row">
-                <div class="tab-item col">
-                    <a href="#">
-                        <img src="static/image/tab-home.png" alt="" />
-                        <div class="tab-name">首頁</div>
-                    </a>
-                </div>
-                <div class="tab-item col">
-                    <a href="#">
-                        <img src="static/image/tab-daily.png" alt="" />
-                        <div class="tab-name">每日學習</div>
-                    </a>
-                </div>
-                <div class="tab-item col">
-                    <a href="#">
-                        <img src="static/image/tab-course.png" alt="" />
-                        <div class="tab-name">深度學習</div>
-                    </a>
-                </div>
-                <div class="tab-item col">
-                    <a href="#">
-                        <img src="static/image/tab-me.png" alt="" />
-                        <div class="tab-name">我的</div>
-                    </a>
-                </div>
-            </div>
-        </footer>
+		<footer>
+			<div class="row">
+				<div class="tab-item col">
+					<a href="#">
+						<img src="static/image/tab-home.png" alt="" />
+						<div class="tab-name">首頁</div>
+					</a>
+				</div>
+				<div class="tab-item col">
+					<a href="#">
+						<img src="static/image/tab-daily.png" alt="" />
+						<div class="tab-name">每日學習</div>
+					</a>
+				</div>
+				<div class="tab-item col">
+					<a href="#">
+						<img src="static/image/tab-course.png" alt="" />
+						<div class="tab-name">深度學習</div>
+					</a>
+				</div>
+				<div class="tab-item col">
+					<a href="#" data-toggle="modal" data-target="#loginModal">
+						<img src="static/image/tab-me.png" alt="" />
+						<div class="tab-name">我的</div>
+					</a>
+				</div>
+			</div>
+		</footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
-        <script>
-            $(function() {
-                var mySwiper = new Swiper('.swiper-container', {
-                    spaceBetween: 10,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        type: 'bullets'
-                    }
-                });
-            });
-        </script>
-    </body>
+		<div class="modal fade login-modal" id="loginModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">登入</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="static/image/icon-close.png" alt="" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="icon-row">
+							<a href="#">
+								<img src="static/image/icon-facebook.png" alt="" />
+							</a>
+							<a href="#">
+								<img src="static/image/icon-google.png" alt="" />
+							</a>
+							<a href="#">
+								<img src="static/image/icon-line.png" alt="" />
+							</a>
+							<a href="#">
+								<img src="static/image/icon-apple.png" alt="" />
+							</a>
+						</div>
+						<div class="hr-line">
+							<span>或使用手機驗證登入:)</span>
+						</div>
+
+						<div class="login-form">
+							<div class="form-group">
+								<img src="static/image/icon-phone.png" alt="" />
+								<select>
+									<option value="+886">+886</option>
+								</select>
+								<input type="tel" placeholder="請輸入手機" />
+								<!-- 加 disabled 屬性變灰 -->
+								<button type="button" class="cw-btn cw-btn-green" disabled>發送驗證碼</button>
+							</div>
+							<div class="form-group">
+								<img src="static/image/icon-key.png" alt="" />
+								<input type="text" placeholder="請輸入驗證碼" />
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="cbAgree" />
+								<label class="form-check-label" for="cbAgree"> 我已閱讀並同意<a href="#" class="dark">用戶協議</a>及<a href="#" class="dark">隱私權政策</a> </label>
+							</div>
+							<button type="button" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">進入張維英文</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade alert-modal" id="offlineModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">離線狀態</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="static/image/icon-close.png" alt="" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="mt-3 mb-5">目前為離線狀態，只能使用「離線收聽」功能，是否前往收聽？</p>
+						<a href="#" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">前往離線收聽</a>
+						<a href="#" class="cw-btn cw-btn-round cw-btn-block btn-leave" data-dismiss="modal">離開 app</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade alert-modal" id="registModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">還不是會員</h5>
+					</div>
+					<div class="modal-body">
+						<p class="mt-3 mb-5">還不是會員？註冊並完整填寫資料，立即測試你的英文水平！</p>
+						<a href="#" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">立即註冊</a>
+						<a href="#" class="cw-btn cw-btn-round cw-btn-block btn-leave" data-dismiss="modal">考慮一下</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+		<script>
+			$(function() {
+				var mySwiper = new Swiper('.swiper-container', {
+					spaceBetween: 10,
+					pagination: {
+						el: '.swiper-pagination',
+						type: 'bullets'
+					}
+				});
+			});
+		</script>
+	</body>
 </html>

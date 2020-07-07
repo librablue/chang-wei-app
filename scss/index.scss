@@ -3,142 +3,292 @@
 
 h1,
 h2 {
-    font-weight: 700;
+	font-weight: 700;
 }
 
 h1 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 h2 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 .subtitle-row {
-    h2 {
-        color: #2e2e2e;
-    }
-    .show-more {
-        color: #c1c1c6;
-    }
+	h2 {
+		color: #2e2e2e;
+	}
+	.show-more {
+		color: #c1c1c6;
+	}
 }
 
 .swiper-slide {
-    position: relative;
-    height: 0;
-    padding-top: 716 / 1920 * 100%;
-    img {
-        max-width: 100%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        border-radius: 10px;
-    }
-    .cw-btn {
-        position: absolute;
-        left: 15px;
-        bottom: 10%;
-        color: #4866bf;
-        background-color: #fff;
-    }
+	position: relative;
+	height: 0;
+	padding-top: 716 / 1920 * 100%;
+	img {
+		max-width: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 10px;
+	}
+	.cw-btn {
+		position: absolute;
+		left: 15px;
+		bottom: 10%;
+		color: #4866bf;
+		background-color: #fff;
+	}
 }
 
 @media (min-width: 768px) {
-    .swiper-slide {
-        .cw-btn {
-            left: 30px;
-            font-size: 2rem;
-        }
-    }
+	.swiper-slide {
+		.cw-btn {
+			left: 30px;
+			font-size: 2rem;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
-    .swiper-slide {
-        .cw-btn {
-            left: 45px;
-            font-size: 2rem;
-        }
-    }
+	.swiper-slide {
+		.cw-btn {
+			left: 45px;
+			font-size: 2rem;
+		}
+	}
 }
 
 .swiper-pagination {
-    text-align: right;
-    padding-right: 2rem;
+	text-align: right;
+	padding-right: 2rem;
 }
 
 .category-row {
-    margin: 3rem 0;
-    .col {
-        text-align: center;
-    }
-    img {
-        width: 60%;
-    }
-    .name {
-        font-size: 1rem;
-        color: #2e2e2e;
-        margin-top: 6px;
-    }
+	margin: 3rem 0;
+	.col {
+		text-align: center;
+	}
+	img {
+		width: 60%;
+	}
+	.name {
+		font-size: 1rem;
+		color: #2e2e2e;
+		margin-top: 6px;
+	}
 }
 
 .hot-row {
-    margin-bottom: 1.6rem;
-    img {
-        border-radius: 10px;
+    position: relative;
+	margin-bottom: 1.6rem;
+	img {
+		border-radius: 10px;
+	}
+	h3 {
+		font-family: 'Roboto', 'sans-serif';
+		color: #2e2e2e;
+		font-weight: 700;
+	}
+	p {
+		color: #c1c1c6;
+		margin-bottom: 6px;
     }
-    h3 {
-        font-family: 'Roboto', 'sans-serif';
-        color: #2e2e2e;
-        font-weight: 700;
-    }
-    p {
-        color: #c1c1c6;
-        margin-bottom: 6px;
+    .tag-row {
+        position: absolute;
+        right: 7.5px;
+        bottom: 7.5px;
     }
 }
 
 .ribbon-link {
-    position: relative;
-    display: block;
-    color: #2e2e2e;
-    background-image: url('../image/imgbacktest.png');
-    background-repeat: no-repeat;
-    font-size: 1.4rem;
-    width: 100%;
-    padding: 8px 12px;
-    margin: 20px 0;
-    border-radius: 10px;
-    &:after {
-        content: '\003e';
-        position: absolute;
-        right: 16px;
-    }
+	position: relative;
+	display: block;
+	color: #2e2e2e;
+	background-image: url('../image/imgbacktest.png');
+	background-repeat: no-repeat;
+	font-size: 1.4rem;
+	width: 100%;
+	padding: 8px 12px;
+	margin: 20px 0;
+	border-radius: 10px;
+	&:after {
+		content: '\003e';
+		position: absolute;
+		right: 16px;
+	}
 }
 
 .learn-row {
-    .learn-item {
+	.learn-item {
         position: relative;
-        img {
-            border-radius: 10px;
-        }
-        a {
-            position: absolute;
-            text-align: center;
-            right: 0;
-            bottom: 10px;
-            left: 0;
-            color: #fff;
-        }
-    }
-    .intro {
-        color: #999;
-        text-align: right;
-        padding: 4px 0;
-    }
+        display: block;
+		img {
+			border-radius: 10px;
+		}
+		.class-name {
+			position: absolute;
+			text-align: center;
+			right: 0;
+			bottom: 10px;
+			left: 0;
+			color: #fff;
+		}
+	}
+	.intro {
+		color: #999;
+		text-align: right;
+		padding: 4px 0;
+	}
 }
 
 .lind-ad {
-    display: block;
-    margin-top: 2em;
+	display: block;
+	margin-top: 2em;
+}
+
+.login-modal {
+    &.fade {
+        .modal-dialog {
+            transform: translate(0, 100%);
+        }
+    }
+    &.show {
+        transition: opacity .15s;
+        .modal-dialog {
+            transform: translate(0, 0);
+        }
+    }
+	.modal-dialog {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+        margin: 0;
+    }
+    .modal-content {
+        border: none;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+	.modal-header {
+		position: relative;
+		.modal-title {
+			font-size: 1.5rem;
+			font-weight: 700;
+			flex-grow: 1;
+			text-align: center;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 0;
+			margin: 0;
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+
+	.icon-row {
+		text-align: center;
+		margin-top: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	.hr-line {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:before,
+		&:after {
+			content: '';
+			height: 1px;
+			width: 80px;
+			background-color: #e8e9ea;
+		}
+		span {
+			display: inline-block;
+			padding: 0 10px;
+			color: #bcbdc2;
+		}
+	}
+
+	.login-form {
+        padding: 15px;
+        padding-bottom: 8rem;
+		.form-group {
+			padding: 6px 0px;
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid #e8e9ea;
+			input,
+			select {
+				border: none;
+				margin-right: 4px;
+				&:focus {
+					outline: none;
+				}
+			}
+			input {
+				padding: 0 6px;
+			}
+			.cw-btn {
+				border-radius: 4px;
+				padding: 4px 10px;
+				&[disabled] {
+					background-color: #dadadf;
+				}
+			}
+        }
+        .form-check {
+            padding-left: 35px;
+        }
+        .form-check-label {
+            color: #c3c3c7;
+            margin-left: 6px;
+            .dark {
+                color: #2f2f2f;
+            }
+        }
+        .cw-btn-block {
+            margin: 4em 0;
+        }
+	}
+}
+
+.alert-modal {
+    .modal-header {
+        border: none;
+        position: relative;
+		.modal-title {
+			font-size: 2rem;
+			font-weight: 700;
+			flex-grow: 1;
+			text-align: center;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 0;
+			margin: 0;
+			&:focus {
+				outline: none;
+			}
+		}
+    }
+    .modal-content {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px 15px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+    }
+    .btn-leave {
+        color: #63d4aa;
+    }
 }

@@ -39,17 +39,30 @@ img {
   padding: 4px 16px;
 }
 
+.cw-btn:focus {
+  outline: none;
+}
+
 .cw-btn-round {
   border-radius: 50px;
 }
 
-.cw-tag {
-  border-radius: 50px;
-  padding: 2px 8px;
-  vertical-align: middle;
+.cw-btn-block {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+}
+
+.cw-btn-green {
+  background-color: #63d4aa;
+  color: #fff;
 }
 
 .tag-white {
+  border-radius: 50px;
+  padding: 2px 8px;
+  vertical-align: middle;
   background-color: #fff;
   color: #c1c1c6 !important;
   border: 1px solid #c1c1c6;
@@ -169,6 +182,7 @@ h2 {
 }
 
 .hot-row {
+  position: relative;
   margin-bottom: 1.6rem;
 }
 
@@ -185,6 +199,12 @@ h2 {
 .hot-row p {
   color: #c1c1c6;
   margin-bottom: 6px;
+}
+
+.hot-row .tag-row {
+  position: absolute;
+  right: 7.5px;
+  bottom: 7.5px;
 }
 
 .ribbon-link {
@@ -208,13 +228,14 @@ h2 {
 
 .learn-row .learn-item {
   position: relative;
+  display: block;
 }
 
 .learn-row .learn-item img {
   border-radius: 10px;
 }
 
-.learn-row .learn-item a {
+.learn-row .learn-item .class-name {
   position: absolute;
   text-align: center;
   right: 0;
@@ -232,5 +253,184 @@ h2 {
 .lind-ad {
   display: block;
   margin-top: 2em;
+}
+
+.login-modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+
+.login-modal.show {
+  -webkit-transition: opacity .15s;
+  transition: opacity .15s;
+}
+
+.login-modal.show .modal-dialog {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.login-modal .modal-dialog {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.login-modal .modal-content {
+  border: none;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.login-modal .modal-header {
+  position: relative;
+}
+
+.login-modal .modal-header .modal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.login-modal .modal-header .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.login-modal .modal-header .close:focus {
+  outline: none;
+}
+
+.login-modal .icon-row {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.login-modal .hr-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-modal .hr-line:before, .login-modal .hr-line:after {
+  content: '';
+  height: 1px;
+  width: 80px;
+  background-color: #e8e9ea;
+}
+
+.login-modal .hr-line span {
+  display: inline-block;
+  padding: 0 10px;
+  color: #bcbdc2;
+}
+
+.login-modal .login-form {
+  padding: 15px;
+  padding-bottom: 8rem;
+}
+
+.login-modal .login-form .form-group {
+  padding: 6px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #e8e9ea;
+}
+
+.login-modal .login-form .form-group input,
+.login-modal .login-form .form-group select {
+  border: none;
+  margin-right: 4px;
+}
+
+.login-modal .login-form .form-group input:focus,
+.login-modal .login-form .form-group select:focus {
+  outline: none;
+}
+
+.login-modal .login-form .form-group input {
+  padding: 0 6px;
+}
+
+.login-modal .login-form .form-group .cw-btn {
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+
+.login-modal .login-form .form-group .cw-btn[disabled] {
+  background-color: #dadadf;
+}
+
+.login-modal .login-form .form-check {
+  padding-left: 35px;
+}
+
+.login-modal .login-form .form-check-label {
+  color: #c3c3c7;
+  margin-left: 6px;
+}
+
+.login-modal .login-form .form-check-label .dark {
+  color: #2f2f2f;
+}
+
+.login-modal .login-form .cw-btn-block {
+  margin: 4em 0;
+}
+
+.alert-modal .modal-header {
+  border: none;
+  position: relative;
+}
+
+.alert-modal .modal-header .modal-title {
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.alert-modal .modal-header .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.alert-modal .modal-header .close:focus {
+  outline: none;
+}
+
+.alert-modal .modal-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.alert-modal .btn-leave {
+  color: #63d4aa;
 }
 /*# sourceMappingURL=index.css.map */
