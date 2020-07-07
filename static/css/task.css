@@ -8,6 +8,10 @@ body {
   font-family: '微軟正黑體', 'sans-serif';
 }
 
+body.bg-green-100 {
+  background-color: #eaf6f3;
+}
+
 a {
   text-decoration: none;
 }
@@ -369,7 +373,6 @@ footer .tab-item .tab-name {
 .header .header-content .back-row .link-back {
   display: inline-block;
   width: 36px;
-  color: #000;
 }
 
 .header .header-content h1 {
@@ -487,6 +490,11 @@ footer .tab-item .tab-name {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+}
+
+.article .nav .link-back {
+  display: inline-block;
+  width: 36px;
 }
 
 .article .nav .title {
@@ -670,6 +678,66 @@ footer .tab-item .tab-name {
 .word-list .sentence-row .highlight {
   color: #00b99d;
   font-weight: 700;
+}
+
+.word-card {
+  padding: 60px 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: #fff;
+}
+
+.word-card h1 {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.word-card .kk-row {
+  text-align: center;
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.word-card .kk-row .cw-btn {
+  background-color: transparent;
+  padding: 0 4px;
+}
+
+.word-card .kk-row .icon-speaker {
+  width: 32px;
+}
+
+.word-card .option-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.word-card .option-row .cw-btn {
+  display: inline-block;
+  width: 50%;
+  border-radius: 6px;
+  margin: 1rem 0;
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  background-color: #fff;
+  color: #63d4aa;
+  border: 1px solid #999;
+}
+
+.word-card .option-row .cw-btn.active {
+  background-color: #63d4aa;
+  color: #fff;
 }
 
 .alert-modal .modal-content {

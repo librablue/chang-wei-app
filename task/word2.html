@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>單字複習</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../static/css/task.css" />
+    </head>
+    <body class="bg-green-100">
+        <div class="container article">
+            <nav class="nav">
+                <a href="./index.html" class="link-back">
+                    <img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
+                </a>
+                <div class="title">單字複習</div>
+                <div>
+                    <a href="#">
+                        <img class="img-fluid img-action" src="../static/image/icon-bookmark.png" alt="" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="word-card">
+            <h1>People</h1>
+            <div class="kk-row">
+                <button type="button" class="cw-btn"><img class="icon-speaker" src="../static/image/icon-speaker-sm.png" alt=""></button>
+                <span>/ˋpip!/</span>
+            </div>
+            <div class="option-row">
+                <button type="button" class="cw-btn">紙張</button>
+                <button type="button" class="cw-btn">詩</button>
+                <button type="button" class="cw-btn active">人民</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script>
+            $(function() {
+                $('.btn-bookmark').on('click', function() {
+                    const $toaster = $('.toaster');
+                    $toaster.toggleClass('active');
+                    setTimeout(() => {
+                        $toaster.toggleClass('active');
+                    }, 3000);
+                });
+            });
+        </script>
+    </body>
+</html>
