@@ -842,10 +842,6 @@ footer .tab-item .tab-name {
 }
 
 .word-card {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   padding: 60px 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -886,9 +882,19 @@ footer .tab-item .tab-name {
   margin: 0 auto;
 }
 
-.word-card .option-row .option-item.active .icon-status {
+.word-card .option-row .option-item.correct .icon-status, .word-card .option-row .option-item.error .icon-status {
   visibility: visible;
   opacity: 1;
+}
+
+.word-card .option-row .option-item.correct .cw-btn:focus {
+  background-color: #4bc8ae;
+  color: #fff;
+}
+
+.word-card .option-row .option-item.error .cw-btn:focus {
+  background-color: #ed7c7c;
+  color: #fff;
 }
 
 .word-card .option-row .cw-btn {
@@ -901,11 +907,6 @@ footer .tab-item .tab-name {
   background-color: #fff;
   color: #63d4aa;
   border: 1px solid #999;
-}
-
-.word-card .option-row .cw-btn:focus {
-  background-color: #4bc8ae;
-  color: #fff;
 }
 
 .word-card .option-row .icon-status {
@@ -932,6 +933,109 @@ footer .tab-item .tab-name {
 .word-card .btn-next {
   width: 90%;
   margin: 0 auto;
+}
+
+.word-card .find-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 3rem 0 1.6rem;
+}
+
+.word-card .find-container h2 {
+  font-weight: 700;
+}
+
+.word-card .find-container .kk-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #c1c1c6;
+}
+
+.word-card .find-container .kk-row .icon-speaker {
+  width: 32px;
+}
+
+.word-card .find-container .meaning-list {
+  list-style-type: none;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.word-card .find-container .meaning-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.word-card .find-container .meaning-list li .type {
+  display: inline-block;
+  text-align: center;
+  width: 32px;
+  padding: 0 4px;
+  margin-right: 1rem;
+}
+
+.word-card .find-container .example-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.word-card .find-container .example-list .sentence-row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 1.5rem;
+  padding-left: 2.6rem;
+}
+
+.word-card .find-container .example-list .sentence-row:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.6rem;
+  display: inline-block;
+  width: 90%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.word-card .find-container .example-list .sentence-row .icon-speaker {
+  width: 32px;
+  padding: 0 4px;
+}
+
+.word-card .find-container .example-list .sentence-row .hant {
+  color: #999;
+  margin-top: 6px;
+}
+
+.word-card .find-container .example-list .sentence-row .highlight {
+  color: #00b99d;
+  font-weight: 700;
+}
+
+.word-card .find-container .example-list .sentence-row {
+  padding-left: 0;
+}
+
+.word-card .find-container .example-list .sentence-row:before {
+  height: 0;
+}
+
+.word-card .find-container {
+  padding: 20px;
+  text-align: left;
 }
 
 .complete-card {
@@ -1041,6 +1145,58 @@ footer .tab-item .tab-name {
   width: 32px;
   padding: 0 4px;
   margin-right: 1rem;
+}
+
+.find-container .example-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.find-container .example-list .sentence-row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 1.5rem;
+  padding-left: 2.6rem;
+}
+
+.find-container .example-list .sentence-row:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2.6rem;
+  display: inline-block;
+  width: 90%;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.find-container .example-list .sentence-row .icon-speaker {
+  width: 32px;
+  padding: 0 4px;
+}
+
+.find-container .example-list .sentence-row .hant {
+  color: #999;
+  margin-top: 6px;
+}
+
+.find-container .example-list .sentence-row .highlight {
+  color: #00b99d;
+  font-weight: 700;
+}
+
+.find-container .example-list .sentence-row {
+  padding-left: 0;
+}
+
+.find-container .example-list .sentence-row:before {
+  height: 0;
 }
 
 .alert-modal .modal-content {
