@@ -10,6 +10,13 @@ body {
 body.bg-green-100 {
     background-color: #eaf6f3;
 }
+body.task-complete {
+    background-image: url('../image/complete-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
 
 a {
     text-decoration: none;
