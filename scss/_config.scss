@@ -36,3 +36,7 @@ img {
         padding: 7.5px;
     }
 }
+
+.modal.modal-static .modal-dialog {
+    transform: none;
+  }

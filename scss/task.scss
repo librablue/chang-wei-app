@@ -106,7 +106,8 @@
 	}
 }
 
-.task-container {
+.task-container,
+.article-container {
     padding: 20px;
 	.nav {
 		display: flex;
@@ -171,6 +172,10 @@
 			color: #fff;
 		}
 	}
+}
+
+.article-container {
+	padding-bottom: 18rem;
 }
 
 .word-list {

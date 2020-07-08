@@ -41,6 +41,11 @@ img {
   padding: 7.5px;
 }
 
+.modal.modal-static .modal-dialog {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .img-round {
   border-radius: 10px;
 }
@@ -329,10 +334,10 @@ footer .tab-item .tab-name {
   margin: 4em 0;
 }
 
-.config-modal .content {
+.config-modal .controls {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 4px;
+  bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,10 +348,11 @@ footer .tab-item .tab-name {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
   pointer-events: auto;
 }
 
@@ -374,6 +380,27 @@ footer .tab-item .tab-name {
   width: 26px;
 }
 
+.config-modal .btn-close {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  font-size: 2.5rem;
+  padding: 0;
+}
+
+.config-modal .btn-close:focus {
+  outline: none;
+}
+
+.config-modal .btn-close span {
+  position: relative;
+  top: -4px;
+}
+
 .toaster {
   visibility: hidden;
   position: fixed;
@@ -394,6 +421,72 @@ footer .tab-item .tab-name {
 .toaster.active {
   visibility: visible;
   opacity: 1;
+}
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.audio-player .tracker-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 2rem;
+}
+
+.audio-player .tracker-row .time {
+  color: #c1c1c6;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  display: inline-block;
+  text-align: center;
+}
+
+.audio-player .tracker-row .slider {
+  -webkit-box-flex: 6;
+      -ms-flex-positive: 6;
+          flex-grow: 6;
+}
+
+.audio-player .control-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio-player .control-row .btn-ctrl {
+  border: none;
+  background-color: #fff;
+  width: 32px;
+}
+
+.audio-player .control-row .btn-ctrl:focus {
+  outline: none;
+}
+
+.audio-player .control-row .btn-play {
+  width: 64px;
 }
 
 body {
