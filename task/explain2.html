@@ -61,7 +61,7 @@
 				</p>
 			</div>
 
-			<button type="button" class="cw-btn cw-btn-round cw-btn-block cw-btn-green btn-ask">我要發問</button>
+			<button type="button" class="cw-btn cw-btn-round cw-btn-block cw-btn-green" data-toggle="modal" data-target="#askModal">我要發問</button>
 		</div>
 
 		<!-- 播放器 start -->
@@ -89,8 +89,8 @@
 				</button>
 			</div>
 		</div>
-        <!-- 播放器 end -->
-        
+		<!-- 播放器 end -->
+
 		<!-- 設定播放器 start -->
 		<div class="modal fade config-modal" data-backdrop="static" id="configModal">
 			<div class="modal-dialog controls">
@@ -114,6 +114,24 @@
 			</div>
 		</div>
 		<!-- 設定播放器 end -->
+
+		<!-- 提問 start -->
+		<div class="modal fade ask-modal" id="askModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">提問</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="../static/image/icon-close.png" alt="" />
+						</button>
+					</div>
+					<div class="modal-body">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提問 end -->
 
 		<div class="toaster">發問成功</div>
 
