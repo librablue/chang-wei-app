@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>老師講解</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/task.css" />
+	</head>
+	<body>
+		<div class="container task-container">
+			<nav class="nav">
+				<a href="index.html" class="link-back img-action">
+					<img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
+				</a>
+				<div class="title">老師講解</div>
+				<div>
+					<a href="word2.html" class="img-action">
+						<img class="img-fluid" src="../static/image/icon-translate.png" alt="" />
+					</a>
+					<a href="word2.html" class="img-action">
+						<img class="img-fluid" src="../static/image/icon-bookmark.png" alt="" />
+					</a>
+				</div>
+			</nav>
+			<div class="article-content">
+				<p><span class="underline">Performance</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aliquid, saepe est sapiente eius, rem quisquam ipsum facilis quaerat et labore delectus ex cum. Consequuntur mollitia maiores fugiat! Voluptate, facere.</p>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae cupiditate, cum aspernatur repudiandae non aliquam at numquam placeat illo sunt dolorem nisi fugit quae! Itaque veniam voluptatibus nemo blanditiis laborum.</p>
+			</div>
+
+			<div class="dictionary-tip">
+				<div class="tip-header">
+					<span class="title">Performance</span>
+					<a href="#" class="img-action">
+						<img class="img-fluid" src="../static/image/icon-bookmark-orange-sm.png" alt="" />
+					</a>
+				</div>
+				<div class="kk-row">
+					<a href="#" class="img-action">
+						<img class="img-fluid" src="../static/image/icon-speaker-white-sm.png" alt="" />
+					</a>
+					<span>/pɚˋfɔrməns/</span>
+				</div>
+				<div class="meaning-row">
+					<span class="type">n.</span>
+					<span>性能;表演;表現。</span>
+				</div>
+				<div class="sentence-row">
+					<a href="#" class="img-action">
+						<img class="img-fluid" src="../static/image/icon-speaker-white-sm.png" alt="" />
+					</a>
+					<div class="right">
+						<div class="eng">The evening <span class="highlight">performance</span> begins at 8 o'clock.</div>
+						<div class="hant">晚上的<span class="highlight">演出</span>八點開始。</div>
+					</div>
+				</div>
+				<div class="text-right mt-4">
+					<a href="#" class="link-detail">所有釋義 &gt;</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 播放器 start -->
+		<div class="audio-player">
+			<div class="tracker-row">
+				<div class="time">00:00</div>
+				<input type="range" min="1" max="100" value="10" class="slider" />
+				<div class="time">25:10</div>
+			</div>
+			<div class="control-row">
+				<button type="button" class="btn-ctrl">
+					<img class="img-fluid" src="../static/image/icon-repeat.png" alt="" />
+				</button>
+				<button type="button" class="btn-ctrl">
+					<img class="img-fluid" src="../static/image/icon-prev.png" alt="" />
+				</button>
+				<button type="button" class="btn-ctrl btn-play">
+					<img class="img-fluid" src="../static/image/icon-play.png" alt="" />
+				</button>
+				<button type="button" class="btn-ctrl">
+					<img class="img-fluid" src="../static/image/icon-next.png" alt="" />
+				</button>
+				<button type="button" class="btn-ctrl btn-config" data-toggle="modal" data-target="#configModal">
+					<img class="img-fluid" src="../static/image/icon-more.png" alt="" />
+				</button>
+			</div>
+		</div>
+		<!-- 播放器 end -->
+
+		<!-- 設定播放器 start -->
+		<div class="modal fade config-modal" data-backdrop="static" id="configModal">
+			<div class="modal-dialog controls">
+				<button type="button" class="cw-btn btn-circle">
+					<span class="icon">1.0x</span>
+					<span class="text">播放速度</span>
+				</button>
+				<button type="button" class="cw-btn btn-circle">
+					<span class="icon">M</span>
+					<span class="text">字體大小</span>
+				</button>
+				<button type="button" class="cw-btn btn-circle">
+					<span class="icon">
+						<img src="../static/image/icon-download.png" alt="" />
+					</span>
+					<span class="text">離線音檔</span>
+				</button>
+				<button type="button" class="btn-close" data-dismiss="modal">
+					<span>&times;</span>
+				</button>
+			</div>
+		</div>
+		<!-- 設定播放器 end -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

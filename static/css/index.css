@@ -506,6 +506,77 @@ footer .tab-item .tab-name {
   width: 64px;
 }
 
+.dictionary-tip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: #313131;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.6rem;
+}
+
+.dictionary-tip .img-action {
+  display: inline-block;
+  width: 16px;
+  margin-right: 1rem;
+}
+
+.dictionary-tip .tip-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.dictionary-tip .tip-header .title {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 2.5rem;
+}
+
+.dictionary-tip .tip-header .img-action {
+  width: 24px;
+  margin-right: 0;
+}
+
+.dictionary-tip .kk-row {
+  margin-bottom: 1rem;
+}
+
+.dictionary-tip .meaning-row {
+  margin-bottom: 1rem;
+}
+
+.dictionary-tip .meaning-row .type {
+  display: inline-block;
+  width: 16px;
+  margin-right: 16px;
+}
+
+.dictionary-tip .sentence-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dictionary-tip .sentence-row .right {
+  width: calc(100% - 26px);
+}
+
+.dictionary-tip .link-detail {
+  color: #c1c1c6;
+}
+
 body {
   margin-bottom: 8rem;
 }
