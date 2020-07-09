@@ -607,6 +607,7 @@
 				padding: 4px;
 				img {
 					border-radius: 10px;
+					width: 100%;
 				}
                 .close {
                     position: absolute;
@@ -641,14 +642,15 @@
             .gallary-wrap {
                 position: relative;
                 width: 25%;
-                padding: 2px;
+				padding: 2px;
+				text-align: center;
                 img {
-                    border-radius: 8px;
+					border-radius: 8px;
+					width: 100%;
                 }
                 .gallery {
                     position: relative;
-                    display: block;
-                    max-height: 100px;
+					display: block;
                     &:before {
                         content: '';
                         position: absolute;

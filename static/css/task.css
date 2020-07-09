@@ -1421,6 +1421,7 @@ footer .tab-item .tab-name {
 
 .ask-modal .modal-content .queue-row .img-wrap img {
   border-radius: 10px;
+  width: 100%;
 }
 
 .ask-modal .modal-content .queue-row .img-wrap .close {
@@ -1470,16 +1471,17 @@ footer .tab-item .tab-name {
   position: relative;
   width: 25%;
   padding: 2px;
+  text-align: center;
 }
 
 .ask-modal .modal-content .gallary-row .gallary-wrap img {
   border-radius: 8px;
+  width: 100%;
 }
 
 .ask-modal .modal-content .gallary-row .gallary-wrap .gallery {
   position: relative;
   display: block;
-  max-height: 100px;
 }
 
 .ask-modal .modal-content .gallary-row .gallary-wrap .gallery:before {
