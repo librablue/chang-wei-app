@@ -28,6 +28,13 @@ a:hover {
   text-decoration: none;
 }
 
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 img {
   vertical-align: middle;
 }
@@ -63,10 +70,6 @@ img {
 .cw-btn {
   border: none;
   padding: 4px 16px;
-}
-
-.cw-btn:focus {
-  outline: none;
 }
 
 .cw-btn[disable] {
@@ -164,10 +167,6 @@ footer .tab-item .tab-name {
   margin: 0;
 }
 
-.alert-modal .modal-header .close:focus {
-  outline: none;
-}
-
 .alert-modal .modal-content {
   width: 80%;
   margin: 0 auto;
@@ -252,10 +251,6 @@ footer .tab-item .tab-name {
   margin: 0;
 }
 
-.login-modal .modal-header .close:focus {
-  outline: none;
-}
-
 .login-modal .icon-row {
   text-align: center;
   margin-top: 4rem;
@@ -307,11 +302,6 @@ footer .tab-item .tab-name {
 .login-modal .login-form .form-group select {
   border: none;
   margin-right: 4px;
-}
-
-.login-modal .login-form .form-group input:focus,
-.login-modal .login-form .form-group select:focus {
-  outline: none;
 }
 
 .login-modal .login-form .form-group input {
@@ -409,10 +399,6 @@ footer .tab-item .tab-name {
   padding: 0;
 }
 
-.config-modal .btn-close:focus {
-  outline: none;
-}
-
 .config-modal .btn-close span {
   position: relative;
   top: -4px;
@@ -496,10 +482,6 @@ footer .tab-item .tab-name {
   border: none;
   background-color: #fff;
   width: 32px;
-}
-
-.audio-player .control-row .btn-ctrl:focus {
-  outline: none;
 }
 
 .audio-player .control-row .btn-play {
@@ -1400,7 +1382,137 @@ footer .tab-item .tab-name {
   margin: 0;
 }
 
-.ask-modal .modal-header .close:focus {
-  outline: none;
+.ask-modal .modal-footer {
+  position: relative;
+  display: block;
+}
+
+.ask-modal .modal-content {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.ask-modal .modal-content .input-ask {
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.ask-modal .modal-content .queue-row {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #7f7f7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.ask-modal .modal-content .queue-row .img-wrap {
+  position: relative;
+  width: 25%;
+  padding: 4px;
+}
+
+.ask-modal .modal-content .queue-row .img-wrap img {
+  border-radius: 10px;
+}
+
+.ask-modal .modal-content .queue-row .img-wrap .close {
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.ask-modal .modal-content .ctrl-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ask-modal .modal-content .ctrl-row .btn-file {
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  padding: 0;
+}
+
+.ask-modal .modal-content .ctrl-row .cw-btn {
+  background-color: #d8d8d8;
+  color: #fff;
+}
+
+.ask-modal .modal-content .gallary-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap {
+  position: relative;
+  width: 25%;
+  padding: 2px;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap img {
+  border-radius: 8px;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap .gallery {
+  position: relative;
+  display: block;
+  max-height: 100px;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap .gallery:before {
+  content: '';
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  width: 9px;
+  height: 7px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  z-index: 1;
+  opacity: 0;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap .gallery:after {
+  content: '';
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap .gallery.active:before {
+  opacity: 1;
+}
+
+.ask-modal .modal-content .gallary-row .gallary-wrap .gallery.active:after {
+  background-color: #00ccad;
 }
 /*# sourceMappingURL=task.css.map */

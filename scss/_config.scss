@@ -25,6 +25,15 @@ a {
     }
 }
 
+button,
+select,
+input,
+textarea {
+    &:focus {
+        outline: none;
+    }
+}
+
 img {
     vertical-align: middle;
 }
@@ -49,4 +58,4 @@ img {
 
 .modal.modal-static .modal-dialog {
     transform: none;
-  }
+}
