@@ -33,12 +33,22 @@ img {
 }
 
 .row-pd-helf {
-  margin-left: -7.5px;
-  margin-right: -7.5px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .row-pd-helf div[class^='col'] {
-  padding: 7.5px;
+  padding: 4px;
+}
+
+@media (min-width: 375px) {
+  .row-pd-helf {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .row-pd-helf div[class^='col'] {
+    padding: 7.5px;
+  }
 }
 
 .modal.modal-static .modal-dialog {
@@ -306,6 +316,7 @@ footer .tab-item .tab-name {
 
 .login-modal .login-form .form-group input {
   padding: 0 6px;
+  width: 110px;
 }
 
 .login-modal .login-form .form-group .cw-btn {
@@ -332,6 +343,12 @@ footer .tab-item .tab-name {
 
 .login-modal .login-form .cw-btn-block {
   margin: 4em 0;
+}
+
+@media (min-width: 375px) {
+  .login-modal .login-form .form-group input {
+    width: auto;
+  }
 }
 
 .config-modal .controls {
@@ -587,6 +604,7 @@ h2 {
 .hot-row h3 {
   font-family: 'Roboto', 'sans-serif';
   color: #2e2e2e;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -596,9 +614,8 @@ h2 {
 }
 
 .hot-row .tag-row {
-  position: absolute;
-  right: 7.5px;
-  bottom: 7.5px;
+  position: relative;
+  text-align: right;
 }
 
 .ribbon-link {
@@ -607,7 +624,7 @@ h2 {
   color: #2e2e2e;
   background-image: url("../image/imgbacktest.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   font-size: 1.4rem;
   width: 100%;
   padding: 8px 12px;

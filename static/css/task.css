@@ -33,12 +33,22 @@ img {
 }
 
 .row-pd-helf {
-  margin-left: -7.5px;
-  margin-right: -7.5px;
+  margin-left: -4px;
+  margin-right: -4px;
 }
 
 .row-pd-helf div[class^='col'] {
-  padding: 7.5px;
+  padding: 4px;
+}
+
+@media (min-width: 375px) {
+  .row-pd-helf {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .row-pd-helf div[class^='col'] {
+    padding: 7.5px;
+  }
 }
 
 .modal.modal-static .modal-dialog {
@@ -306,6 +316,7 @@ footer .tab-item .tab-name {
 
 .login-modal .login-form .form-group input {
   padding: 0 6px;
+  width: 110px;
 }
 
 .login-modal .login-form .form-group .cw-btn {
@@ -332,6 +343,12 @@ footer .tab-item .tab-name {
 
 .login-modal .login-form .cw-btn-block {
   margin: 4em 0;
+}
+
+@media (min-width: 375px) {
+  .login-modal .login-form .form-group input {
+    width: auto;
+  }
 }
 
 .config-modal .controls {
@@ -508,23 +525,23 @@ footer .tab-item .tab-name {
   top: 0;
   right: 0;
   left: 0;
-  padding: 30px;
+  padding: 26px;
 }
 
 .header .header-content .back-row {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .header .header-content .back-row .link-back {
   display: inline-block;
-  width: 36px;
+  width: 32px;
 }
 
 .header .header-content h1 {
   font-family: 'Roboto', 'sans-serif';
   color: #fff;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
@@ -581,8 +598,8 @@ footer .tab-item .tab-name {
 }
 
 .task-list-container .link-task .img-wrap {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #f5f5f5;
@@ -598,14 +615,14 @@ footer .tab-item .tab-name {
 }
 
 .task-list-container .link-task img.like {
-  width: 26px;
+  width: 20px;
   vertical-align: top;
   visibility: hidden;
 }
 
 .task-list-container .link-task .title {
   color: #000;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
@@ -613,11 +630,40 @@ footer .tab-item .tab-name {
 }
 
 .task-list-container .link-task .status {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #9c9c9c;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+@media (min-width: 375px) {
+  .header .header-content {
+    padding: 30px;
+  }
+  .header .header-content .back-row {
+    margin-bottom: 2rem;
+  }
+  .header .header-content .back-row .link-back {
+    display: inline-block;
+    width: 36px;
+  }
+  .header .header-content h1 {
+    font-size: 3rem;
+  }
+  .task-list-container .link-task .img-wrap {
+    width: 64px;
+    height: 64px;
+  }
+  .task-list-container .link-task img.like {
+    width: 26px;
+  }
+  .task-list-container .link-task .title {
+    font-size: 2rem;
+  }
+  .task-list-container .link-task .status {
+    font-size: 1.6rem;
+  }
 }
 
 .task-container,
@@ -702,6 +748,8 @@ footer .tab-item .tab-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -712,12 +760,19 @@ footer .tab-item .tab-name {
   border-radius: 50px;
   background-color: #ffb44d;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .task-container .restrict-toast .link-upgrade,
 .article-container .restrict-toast .link-upgrade {
   color: #fff;
+}
+
+@media (min-width: 375px) {
+  .task-container .restrict-toast,
+  .article-container .restrict-toast {
+    font-size: 1.4rem;
+  }
 }
 
 .article-container {
