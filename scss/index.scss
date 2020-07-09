@@ -89,6 +89,11 @@ h2 {
 .hot-row {
 	position: relative;
 	margin-bottom: 1.6rem;
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	img {
 		border-radius: 10px;
 	}
