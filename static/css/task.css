@@ -152,6 +152,31 @@ img {
   margin-right: 8px;
 }
 
+.cw-nav .txt-action {
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.cw-tab {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
+}
+
+.cw-tab .tab-link {
+  padding: 10px 16px;
+  color: #c1c1c6;
+}
+
+.cw-tab .tab-link.active {
+  color: #000;
+  border-bottom: 2px solid #00ccad;
+}
+
 footer {
   width: 100%;
   height: 49px;
@@ -213,7 +238,11 @@ footer .tab-item .tab-name {
   font-size: 1.5rem;
 }
 
-.alert-modal .modal-footer.horizontal {
+.alert-modal .modal-content.horizontal {
+  padding: 10px 0 0;
+}
+
+.alert-modal .modal-content.horizontal .modal-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,17 +253,17 @@ footer .tab-item .tab-name {
   padding-bottom: 0;
 }
 
-.alert-modal .modal-footer.horizontal > .col {
+.alert-modal .modal-content.horizontal .modal-footer > .col {
   text-align: center;
   border-right: 1px solid #dee2e6;
   margin: 0;
 }
 
-.alert-modal .modal-footer.horizontal > .col:last-child {
+.alert-modal .modal-content.horizontal .modal-footer > .col:last-child {
   border-right: 0;
 }
 
-.alert-modal .modal-footer.horizontal > .col * {
+.alert-modal .modal-content.horizontal .modal-footer > .col * {
   display: inline-block;
   padding: 12px 0;
   color: #07ba9f;
@@ -477,6 +506,13 @@ footer .tab-item .tab-name {
   background-color: #fff;
 }
 
+.audio-player.inline {
+  position: static;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .audio-player .tracker-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,8 +545,9 @@ footer .tab-item .tab-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -520,6 +557,7 @@ footer .tab-item .tab-name {
   border: none;
   background-color: #fff;
   width: 32px;
+  margin: 0 10px;
 }
 
 .audio-player .control-row .btn-play {

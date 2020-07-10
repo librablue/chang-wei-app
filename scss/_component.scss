@@ -48,7 +48,7 @@
 }
 
 .cw-container {
-    padding: 20px 15px;
+	padding: 20px 15px;
 }
 
 .cw-nav {
@@ -70,6 +70,24 @@
 		display: inline-block;
 		width: 24px;
 		margin-right: 8px;
+	}
+	.txt-action {
+		font-size: 1.6rem;
+		color: #000;
+	}
+}
+
+.cw-tab {
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 3rem;
+	.tab-link {
+		padding: 10px 16px;
+		color: #c1c1c6;
+		&.active {
+			color: #000;
+			border-bottom: 2px solid #00ccad;
+		}
 	}
 }
 
@@ -124,22 +142,26 @@ footer {
 		border-radius: 20px;
 		font-size: 1.5rem;
 	}
-	.modal-footer.horizontal {
-		display: flex;
-		justify-content: center;
-		padding-top: 0;
-		padding-bottom: 0;
-		& > .col {
-			text-align: center;
-			border-right: 1px solid #dee2e6;
-			margin: 0;
-			&:last-child {
-				border-right: 0;
-			}
-			* {
-				display: inline-block;
-				padding: 12px 0;
-				color: #07ba9f;
+
+	.modal-content.horizontal {
+		padding: 10px 0 0;
+		.modal-footer {
+			display: flex;
+			justify-content: center;
+			padding-top: 0;
+			padding-bottom: 0;
+			& > .col {
+				text-align: center;
+				border-right: 1px solid #dee2e6;
+				margin: 0;
+				&:last-child {
+					border-right: 0;
+				}
+				* {
+					display: inline-block;
+					padding: 12px 0;
+					color: #07ba9f;
+				}
 			}
 		}
 	}
@@ -340,6 +362,11 @@ footer {
 	border-top-right-radius: 20px;
 	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 	background-color: #fff;
+	&.inline {
+		position: static;
+		border-radius: 0;
+		box-shadow: none;
+	}
 	.tracker-row {
 		display: flex;
 		justify-content: space-between;
@@ -357,12 +384,13 @@ footer {
 	}
 	.control-row {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
 		.btn-ctrl {
 			border: none;
 			background-color: #fff;
 			width: 32px;
+			margin: 0 10px;
 		}
 		.btn-play {
 			width: 64px;

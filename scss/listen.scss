@@ -9,22 +9,6 @@
 	padding-top: 180 / 375 * 100%;
 }
 
-.task-list-container {
-	.nav {
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 3rem;
-		.tab-link {
-			padding: 10px 16px;
-			color: #c1c1c6;
-			&.active {
-				color: #000;
-				border-bottom: 2px solid #00ccad;
-			}
-		}
-	}
-}
-
 .top-row {
     display: flex;
     flex-direction: column;

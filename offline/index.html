@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>離線收聽</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/offline.css" />
+	</head>
+	<body>
+		<div class="cw-container">
+			<nav class="cw-nav">
+				<a href="./index.html" class="link-back">
+					<img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
+				</a>
+				<div class="title">離線收聽</div>
+				<a href="#" class="txt-action btn-edit">編輯</a>
+			</nav>
+			<ul class="nav cw-tab">
+				<li class="tab-item">
+					<a class="tab-link active" data-toggle="pill" href="#tab1">原文朗讀</a>
+				</li>
+				<li class="tab-item">
+					<a class="tab-link" data-toggle="pill" href="#tab2">老師講解</a>
+				</li>
+				<li class="tab-item">
+					<a class="tab-link" data-toggle="pill" href="#tab3">單字預習</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="tab1" class="tab-pane fade show active">
+					<ul class="offline-list">
+						<li>
+							<div class="top-row">
+								<div class="rm-wrap">
+									<button type="button" class="btn-remove" data-toggle="modal" data-target="#alertModal">
+										<img class="img-fluid" src="../static/image/icon-delete.png" alt="" />
+									</button>
+								</div>
+								<div class="row row-pd-helf offline-row">
+									<div class="col-4">
+										<img class="img-fluid" src="https://fakeimg.pl/256x256/" />
+									</div>
+									<div class="col-8 right">
+										<div>
+											<h3>Man Who Ate $120,000 Banana at Art Show Says 'I'm not Sorry'</h3>
+										</div>
+										<div class="date">2020.02.19</div>
+									</div>
+								</div>
+							</div>
+							<div class="audio-player inline">
+								<div class="tracker-row">
+									<div class="time">00:00</div>
+									<input type="range" min="1" max="100" value="10" class="slider" />
+									<div class="time">25:10</div>
+								</div>
+								<div class="control-row">
+									<button type="button" class="btn-ctrl">
+										<img class="img-fluid" src="../static/image/icon-prev.png" alt="" />
+									</button>
+									<button type="button" class="btn-ctrl btn-play">
+										<img class="img-fluid" src="../static/image/icon-play.png" alt="" />
+									</button>
+									<button type="button" class="btn-ctrl">
+										<img class="img-fluid" src="../static/image/icon-next.png" alt="" />
+									</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="top-row">
+								<div class="rm-wrap">
+									<button type="button" class="btn-remove">
+										<img class="img-fluid" src="../static/image/icon-delete.png" alt="" />
+									</button>
+								</div>
+								<div class="row row-pd-helf offline-row">
+									<div class="col-4">
+										<img class="img-fluid" src="https://fakeimg.pl/256x256/" />
+									</div>
+									<div class="col-8 right">
+										<div>
+											<h3>Man Who Ate $120,000 Banana at Art Show Says 'I'm not Sorry'</h3>
+										</div>
+										<div class="date">2020.02.19</div>
+									</div>
+								</div>
+							</div>
+							<div class="audio-player inline">
+								<div class="tracker-row">
+									<div class="time">00:00</div>
+									<input type="range" min="1" max="100" value="10" class="slider" />
+									<div class="time">25:10</div>
+								</div>
+								<div class="control-row">
+									<button type="button" class="btn-ctrl">
+										<img class="img-fluid" src="../static/image/icon-prev.png" alt="" />
+									</button>
+									<button type="button" class="btn-ctrl btn-play">
+										<img class="img-fluid" src="../static/image/icon-play.png" alt="" />
+									</button>
+									<button type="button" class="btn-ctrl">
+										<img class="img-fluid" src="../static/image/icon-next.png" alt="" />
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="tab2" class="tab-pane fade"></div>
+				<div id="tab3" class="tab-pane fade"></div>
+			</div>
+		</div>
+
+		<!-- 提示 start -->
+		<div class="modal fade alert-modal" id="alertModal">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content horizontal">
+					<div class="modal-header">
+						<h5 class="modal-title">確定要刪除此項目?</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="../static/image/icon-close.png" alt="" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-center mt-3 mb-5">確定要刪除此項原文朗讀的音檔嗎?</p>
+					</div>
+					<div class="modal-footer">
+						<div class="col">
+							<a href="./index.html" class="cw-btn">取消</a>
+						</div>
+						<div class="col">
+							<a href="#" class="cw-btn" data-dismiss="modal">確定</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提示 end -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<script>
+			$(function() {
+				$('.btn-edit').on('click', function() {
+					$('.rm-wrap').toggleClass('show');
+				});
+			});
+		</script>
+	</body>
+</html>
