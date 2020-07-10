@@ -19,6 +19,7 @@
 	width: 100%;
 	padding: 12px;
 	text-align: center;
+	font-size: 1.6rem;
 }
 
 .cw-btn-green {
@@ -44,6 +45,32 @@
 	background-color: #fff;
 	color: #c1c1c6 !important;
 	border: 1px solid #c1c1c6;
+}
+
+.cw-container {
+    padding: 20px 15px;
+}
+
+.cw-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	.link-back {
+		display: inline-block;
+		width: 36px;
+	}
+	.title {
+		font-size: 2rem;
+		font-weight: 700;
+		flex-grow: 8;
+		text-align: center;
+	}
+	.img-action {
+		display: inline-block;
+		width: 24px;
+		margin-right: 8px;
+	}
 }
 
 footer {

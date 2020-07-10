@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>任務清單</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/listen.css" />
+	</head>
+	<body>
+		<div class="header">
+			<img src="https://fakeimg.pl/375x180/" />
+			<div class="header-content">
+				<div class="back-row">
+					<a href="../index.html" class="link-back">
+						<img class="img-fluid" src="../static/image/icon-back-white.png" alt="" />
+					</a>
+				</div>
+				<h1>聽力訓練</h1>
+			</div>
+		</div>
+		<div class="task-list-container">
+			<ul class="nav">
+				<li class="tab-item">
+					<a class="tab-link active" data-toggle="pill" href="#lv1">初級</a>
+				</li>
+				<li class="tab-item">
+					<a class="tab-link" data-toggle="pill" href="#lv2">中級</a>
+				</li>
+				<li class="tab-item">
+					<a class="tab-link" data-toggle="pill" href="#lv3">中高級</a>
+				</li>
+				<li class="tab-item">
+					<a class="tab-link" data-toggle="pill" href="#lv4">高級</a>
+				</li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="lv1"  class="tab-pane fade show active">
+					<ul class="task-list">
+						<li>
+							<a href="test3.html" class="link-task active">
+								<div class="img-wrap">
+									<img class="reward" src="../static/image/icon-reward-active.png" alt="" />
+								</div>
+								<span class="title">
+									1. 看圖辯意
+									<img class="like" src="../static/image/icon-like.png" alt="" />
+								</span>
+								<span class="status">已通過 &gt;</span>
+							</a>
+						</li>
+						<li>
+							<a href="test1.html" class="link-task">
+								<div class="img-wrap">
+									<img class="reward" src="../static/image/icon-reward.png" alt="" />
+								</div>
+								<span class="title">
+									2. 你問我答
+									<img class="like" src="../static/image/icon-like.png" alt="" />
+								</span>
+								<span class="status">未開始 &gt;</span>
+							</a>
+						</li>
+						<li>
+							<a href="test2.html" class="link-task active">
+								<div class="img-wrap">
+									<img class="reward" src="../static/image/icon-reward-active.png" alt="" />
+								</div>
+								<span class="title">
+									3. 簡短對話
+									<img class="like" src="../static/image/icon-like.png" alt="" />
+								</span>
+								<span class="status">已通過 &gt;</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="link-task">
+								<div class="img-wrap">
+									<img class="reward" src="../static/image/icon-reward.png" alt="" />
+								</div>
+								<span class="title">
+									4. 單字複習
+									<img class="like" src="../static/image/icon-like.png" alt="" />
+								</span>
+								<span class="status">未開始 &gt;</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="link-task">
+								<div class="img-wrap">
+									<img class="reward" src="../static/image/icon-reward.png" alt="" />
+								</div>
+								<span class="title">
+									5. 隨堂測驗
+									<img class="like" src="../static/image/icon-like.png" alt="" />
+								</span>
+								<span class="status">未開始 &gt;</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="lv2" class="tab-pane fade">123</div>
+				<div id="lv3" class="tab-pane fade">456</div>
+				<div id="lv4" class="tab-pane fade">789</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

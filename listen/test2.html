@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>簡短對話</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/listen.css" />
+	</head>
+	<body>
+		<div class="cw-container">
+			<nav class="cw-nav">
+				<a href="./index.html" class="link-back">
+					<img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
+				</a>
+				<div class="title">簡短對話</div>
+				<a href="#" class="img-action"></a>
+			</nav>
+			<div class="top-row">
+				<button type="button" class="btn-listen-play">
+					<img src="../static/image/icon-speaker.png" alt="" />
+				</button>
+			</div>
+			<div class="option-row">
+				<!-- error 切換顯示 icon -->
+				<div class="option-item error">
+					<button type="button" class="cw-btn">Unbrella</button>
+					<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+				</div>
+				<div class="option-item">
+					<button type="button" class="cw-btn">Tablet</button>
+					<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+				</div>
+				<!-- correct 切換顯示 icon -->
+				<div class="option-item correct">
+					<button type="button" class="cw-btn">Lunch</button>
+					<img class="icon-status" src="../static/image/icon-correct.png" alt="" />
+				</div>
+				<div class="option-item">
+					<button type="button" class="cw-btn">Dinner</button>
+					<img class="icon-status" src="../static/image/icon-correct.png" alt="" />
+				</div>
+			</div>
+
+			<!-- 題目解析 start -->
+			<div class="explain-row">
+				<h1>題目解析</h1>
+				<p>A : Hi David, thank you for borrowing me umbrella yesterday !</p>
+				<p>B : My pleasure. It was raining cats and dogs, no one can go outside without bring umbrella, haha.</p>
+				<p>A : But .... I forgot to bring your umbrella today, I'm sorry...</p>
+				<p>B : It's okay, it's cloudy.</p>
+			</div>
+			<!-- 題目解析 end -->
+
+			<!-- disable 切換狀態 -->
+			<a href="#" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">下一題</a>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

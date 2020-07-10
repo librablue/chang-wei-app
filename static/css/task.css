@@ -85,6 +85,7 @@ img {
   width: 100%;
   padding: 12px;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .cw-btn-green {
@@ -112,6 +113,43 @@ img {
   background-color: #fff;
   color: #c1c1c6 !important;
   border: 1px solid #c1c1c6;
+}
+
+.cw-container {
+  padding: 20px 15px;
+}
+
+.cw-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cw-nav .link-back {
+  display: inline-block;
+  width: 36px;
+}
+
+.cw-nav .title {
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  text-align: center;
+}
+
+.cw-nav .img-action {
+  display: inline-block;
+  width: 24px;
+  margin-right: 8px;
 }
 
 footer {
@@ -594,6 +632,7 @@ footer .tab-item .tab-name {
   right: 0;
   bottom: 0;
   left: 0;
+  width: 100%;
 }
 
 .header .header-content {
@@ -627,6 +666,22 @@ footer .tab-item .tab-name {
 
 .header .header-content .tag-row .tag-white {
   color: #4a4a4a !important;
+}
+
+@media (min-width: 375px) {
+  .header .header-content {
+    padding: 30px;
+  }
+  .header .header-content .back-row {
+    margin-bottom: 2rem;
+  }
+  .header .header-content .back-row .link-back {
+    display: inline-block;
+    width: 36px;
+  }
+  .header .header-content h1 {
+    font-size: 3rem;
+  }
 }
 
 .task-list-container {
@@ -714,19 +769,6 @@ footer .tab-item .tab-name {
 }
 
 @media (min-width: 375px) {
-  .header .header-content {
-    padding: 30px;
-  }
-  .header .header-content .back-row {
-    margin-bottom: 2rem;
-  }
-  .header .header-content .back-row .link-back {
-    display: inline-block;
-    width: 36px;
-  }
-  .header .header-content h1 {
-    font-size: 3rem;
-  }
   .task-list-container .link-task .img-wrap {
     width: 64px;
     height: 64px;
@@ -740,48 +782,6 @@ footer .tab-item .tab-name {
   .task-list-container .link-task .status {
     font-size: 1.6rem;
   }
-}
-
-.task-container,
-.article-container {
-  padding: 20px 15px;
-}
-
-.task-container .nav,
-.article-container .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
-}
-
-.task-container .nav .link-back,
-.article-container .nav .link-back {
-  display: inline-block;
-  width: 36px;
-}
-
-.task-container .nav .title,
-.article-container .nav .title {
-  font-size: 2rem;
-  font-weight: 700;
-  -webkit-box-flex: 8;
-      -ms-flex-positive: 8;
-          flex-grow: 8;
-  text-align: center;
-}
-
-.task-container .nav .img-action,
-.article-container .nav .img-action {
-  display: inline-block;
-  width: 24px;
-  margin-right: 8px;
 }
 
 .task-container h1,
@@ -1020,11 +1020,13 @@ footer .tab-item .tab-name {
 .word-card .option-row .option-item.correct .cw-btn:focus {
   background-color: #4bc8ae;
   color: #fff;
+  border: 1px solid #4bc8ae;
 }
 
 .word-card .option-row .option-item.error .cw-btn:focus {
   background-color: #ed7c7c;
   color: #fff;
+  border: 1px solid #ed7c7c;
 }
 
 .word-card .option-row .cw-btn {

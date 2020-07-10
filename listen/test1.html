@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>你問我答</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/listen.css" />
+	</head>
+	<body>
+		<div class="cw-container">
+			<nav class="cw-nav">
+				<a href="./index.html" class="link-back">
+					<img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
+				</a>
+				<div class="title">你問我答</div>
+				<a href="#" class="img-action"></a>
+			</nav>
+			<div class="top-row">
+				<img class="img-fluid top-img" src="https://fakeimg.pl/200x140/" />
+				<button type="button" class="btn-listen-play">
+					<img src="../static/image/icon-speaker.png" alt="" />
+				</button>
+			</div>
+			<div class="option-row">
+                <!-- error 切換顯示 icon -->
+				<div class="option-item error">
+					<button type="button" class="cw-btn">Yes, I have work tomorrow.</button>
+					<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+				</div>
+				<div class="option-item">
+					<button type="button" class="cw-btn">No, I don't.</button>
+					<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+				</div>
+				<!-- correct 切換顯示 icon -->
+				<div class="option-item correct">
+					<button type="button" class="cw-btn">I wore red dress yesterday.</button>
+					<img class="icon-status" src="../static/image/icon-correct.png" alt="" />
+				</div>
+				<div class="option-item">
+					<button type="button" class="cw-btn">He loves her very mush.</button>
+					<img class="icon-status" src="../static/image/icon-correct.png" alt="" />
+				</div>
+            </div>
+            
+            <!-- 題目解析 start -->
+			<div class="explain-row">
+				<h1>題目解析</h1>
+				<p>Q：What clothes did you wear yesterday?</p>
+				<p>A：I wore red dress yesterday.</p>
+            </div>
+            <!-- 題目解析 end -->
+            
+            <!-- disable 切換狀態 -->
+            <a href="#" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">下一題</a>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
