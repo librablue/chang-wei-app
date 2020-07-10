@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>首頁</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" />
+        <link rel="stylesheet" href="static/css/login.css" />
+    </head>
+    <body>
+        <div class="cw-container">
+            <h1>註冊登入</h1>
+            <div class="login-channel-row">
+                <a href="#">
+                    <img src="static/image/icon-facebook.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="static/image/icon-google.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="static/image/icon-line.png" alt="" />
+                </a>
+                <a href="#">
+                    <img src="static/image/icon-apple.png" alt="" />
+                </a>
+            </div>
+            <div class="hr-line">
+                <span>或使用手機驗證登入:)</span>
+            </div>
+
+            <div class="login-form">
+                <div class="form-group">
+                    <img src="static/image/icon-phone.png" alt="" />
+                    <select>
+                        <option value="+886">+886</option>
+                    </select>
+                    <input type="tel" placeholder="請輸入手機" />
+                    <!-- 加 disabled 屬性變灰 -->
+                    <button type="button" class="cw-btn cw-btn-green" disabled>發送驗證碼</button>
+                </div>
+                <div class="form-group">
+                    <img src="static/image/icon-key.png" alt="" />
+                    <input type="text" placeholder="請輸入驗證碼" />
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="cbAgree" />
+                    <label class="form-check-label" for="cbAgree"> 我已閱讀並同意<a href="#" class="dark">用戶協議</a>及<a href="#" class="dark">隱私權政策</a> </label>
+                </div>
+                <button type="button" class="cw-btn cw-btn-round cw-btn-block cw-btn-green">進入張維英文</button>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="link-visit">我想先逛逛 &gt;</a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </body>
+</html>

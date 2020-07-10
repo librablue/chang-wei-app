@@ -318,13 +318,13 @@ footer .tab-item .tab-name {
   margin: 0;
 }
 
-.login-modal .icon-row {
+.login-channel-row {
   text-align: center;
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
-.login-modal .hr-line {
+.hr-line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,25 +336,25 @@ footer .tab-item .tab-name {
           align-items: center;
 }
 
-.login-modal .hr-line:before, .login-modal .hr-line:after {
+.hr-line:before, .hr-line:after {
   content: '';
   height: 1px;
   width: 80px;
   background-color: #e8e9ea;
 }
 
-.login-modal .hr-line span {
+.hr-line span {
   display: inline-block;
   padding: 0 10px;
   color: #bcbdc2;
 }
 
-.login-modal .login-form {
+.login-form {
   padding: 15px;
   padding-bottom: 8rem;
 }
 
-.login-modal .login-form .form-group {
+.login-form .form-group {
   padding: 6px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,40 +365,40 @@ footer .tab-item .tab-name {
   border-bottom: 1px solid #e8e9ea;
 }
 
-.login-modal .login-form .form-group input,
-.login-modal .login-form .form-group select {
+.login-form .form-group input,
+.login-form .form-group select {
   border: none;
   margin-right: 4px;
 }
 
-.login-modal .login-form .form-group input {
+.login-form .form-group input {
   padding: 0 6px;
   width: 110px;
 }
 
-.login-modal .login-form .form-group .cw-btn {
+.login-form .form-group .cw-btn {
   border-radius: 4px;
   padding: 4px 10px;
 }
 
-.login-modal .login-form .form-group .cw-btn[disabled] {
+.login-form .form-group .cw-btn[disabled] {
   background-color: #dadadf;
 }
 
-.login-modal .login-form .form-check {
+.login-form .form-check {
   padding-left: 35px;
 }
 
-.login-modal .login-form .form-check-label {
+.login-form .form-check-label {
   color: #c3c3c7;
   margin-left: 6px;
 }
 
-.login-modal .login-form .form-check-label .dark {
+.login-form .form-check-label .dark {
   color: #2f2f2f;
 }
 
-.login-modal .login-form .cw-btn-block {
+.login-form .cw-btn-block {
   margin: 4em 0;
 }
 
