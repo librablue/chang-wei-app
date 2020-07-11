@@ -1,0 +1,67 @@
+@import './config';
+@import './component';
+@import './mixin';
+
+.cw-nav {
+	background-color: #f9f9f9;
+	padding: 10px 15px;
+	margin-bottom: 0;
+}
+
+.filter-modal {
+	top: 56px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	.modal-dialog {
+		margin: 0;
+		width: 100%;
+		.modal-content {
+			border: none;
+			border-radius: 0;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+	}
+	.filter-row {
+		background-color: #fff;
+		padding: 10px 20px 30px;
+		.category {
+			font-size: 1.6rem;
+			font-weight: 700;
+			margin: 1rem 0;
+		}
+		.tag-white {
+			&.active {
+                background-color: #00ccad;
+                color: #fff !important;
+			}
+		}
+	}
+}
+.modal-backdrop {
+	top: 56px;
+}
+
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 100%;
+	}
+}
+
+.top-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+	.btn-reset {
+		color: #ed8080;
+	}
+}
+
+.hot-row {
+	img {
+		border-radius: 10px;
+	}
+}

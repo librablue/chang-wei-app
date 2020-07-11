@@ -111,12 +111,23 @@ img {
 }
 
 .tag-white {
+  display: inline-block;
   border-radius: 50px;
   padding: 2px 8px;
+  margin-bottom: 1rem;
   vertical-align: middle;
   background-color: #fff;
   color: #c1c1c6 !important;
   border: 1px solid #c1c1c6;
+}
+
+.tag-grey {
+  border-radius: 50px;
+  padding: 2px 8px;
+  vertical-align: middle;
+  background-color: #d8d8d8;
+  color: #fff !important;
+  border: 1px solid #d8d8d8;
 }
 
 .cw-container {
