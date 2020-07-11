@@ -15,14 +15,14 @@
 				<img class="img-fluid" src="../static/image/icon-back-black.png" alt="" />
 			</a>
 			<div class="title">發問記錄</div>
-			<a href="#" class="img-action">
+			<a href="#" class="img-action" data-toggle="modal" data-target="#filterModal">
 				<img class="img-fluid" src="../static/image/icon-filter.png" alt="" />
 			</a>
 		</nav>
 		<div class="cw-container">
-            <div class="text-right">
-                <a href="#" class="btn-reset">重置</a>
-            </div>
+			<div class="text-right">
+				<a href="#" class="btn-reset">重置</a>
+			</div>
 			<div class="title-year">2020</div>
 			<ul class="ask-list">
 				<li>
@@ -76,6 +76,31 @@
 				</li>
 			</ul>
 		</div>
+
+		<!-- 提示 start -->
+		<div class="modal fade bottom-modal" id="filterModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" data-dismiss="modal">取消</button>
+						<h5 class="modal-title">搜尋年份</h5>
+						<button type="button" class="btn-confirm" data-dismiss="modal">確定</button>
+					</div>
+					<div class="modal-body">
+						<ul class="year-list">
+							<li>2016</li>
+							<li>2017</li>
+							<li>2018</li>
+							<li>2019</li>
+							<li>2020</li>
+							<li>2021</li>
+							<li>2022</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提示 end -->
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>

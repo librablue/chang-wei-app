@@ -772,4 +772,35 @@ footer .tab-item .tab-name {
 .ask-list .ask-card .bottom-row .date {
   color: #999;
 }
+
+.bottom-modal .modal-header button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.4rem;
+}
+
+.bottom-modal .modal-header button.btn-cancel {
+  color: #474747;
+}
+
+.bottom-modal .modal-header button.btn-confirm {
+  color: #59cdb4;
+}
+
+.bottom-modal .modal-content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.year-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  overflow: auto;
+}
+
+.year-list li {
+  text-align: center;
+}
 /*# sourceMappingURL=me.css.map */

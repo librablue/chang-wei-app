@@ -68,3 +68,34 @@
 		}
 	}
 }
+
+.bottom-modal {
+	.modal-header {
+		button {
+			border: none;
+			background-color: transparent;
+			font-size: 1.4rem;
+			&.btn-cancel {
+				color: #474747;
+			}
+			&.btn-confirm {
+				color: #59cdb4;
+			}
+		}
+	}
+	.modal-content {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+}
+
+.year-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 100px;
+	overflow: auto;
+	li {
+		text-align: center;
+	}
+}
