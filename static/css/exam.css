@@ -117,6 +117,31 @@ img {
 
 .cw-container {
   padding: 20px 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .cw-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cw-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cw-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cw-container {
+    max-width: 1140px;
+  }
 }
 
 .cw-nav {
@@ -269,39 +294,39 @@ footer .tab-item .tab-name {
   color: #07ba9f;
 }
 
-.login-modal.fade .modal-dialog {
+.bottom-modal.fade .modal-dialog {
   -webkit-transform: translate(0, 100%);
           transform: translate(0, 100%);
 }
 
-.login-modal.show {
+.bottom-modal.show {
   -webkit-transition: opacity 0.15s;
   transition: opacity 0.15s;
 }
 
-.login-modal.show .modal-dialog {
+.bottom-modal.show .modal-dialog {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
 }
 
-.login-modal .modal-dialog {
+.bottom-modal .modal-dialog {
   position: fixed;
   bottom: 0;
   width: 100%;
   margin: 0;
 }
 
-.login-modal .modal-content {
+.bottom-modal .modal-content {
   border: none;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
-.login-modal .modal-header {
+.bottom-modal .modal-header {
   position: relative;
 }
 
-.login-modal .modal-header .modal-title {
+.bottom-modal .modal-header .modal-title {
   font-size: 1.5rem;
   font-weight: 700;
   -webkit-box-flex: 1;
@@ -310,12 +335,29 @@ footer .tab-item .tab-name {
   text-align: center;
 }
 
-.login-modal .modal-header .close {
+.bottom-modal .modal-header .close {
   position: absolute;
   top: 10px;
   right: 10px;
   padding: 0;
   margin: 0;
+}
+
+.bottom-modal .modal-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-modal .modal-footer .cw-btn {
+  padding: 1rem 3rem;
+  margin: 0 1rem;
+}
+
+@media (min-width: 576px) {
+  .bottom-modal .modal-dialog {
+    max-width: 100%;
+  }
 }
 
 .login-channel-row {
@@ -403,7 +445,7 @@ footer .tab-item .tab-name {
 }
 
 @media (min-width: 375px) {
-  .login-modal .login-form .form-group input {
+  .login-form .form-group input {
     width: auto;
   }
 }
@@ -800,7 +842,20 @@ footer .tab-item .tab-name {
 }
 
 .header {
-  padding-top: 48%;
+  padding-top: 91.14583%;
+  overflow: hidden;
+}
+
+.header:after {
+  content: '';
+  display: block;
+  width: 140%;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: -20%;
+  bottom: -140px;
 }
 
 .top-row {
@@ -825,9 +880,14 @@ footer .tab-item .tab-name {
 .top-row p .highlight {
   display: inline-block;
   background-color: #f0f0f0;
+  color: #f0f0f0;
   border-radius: 4px;
   padding: 2px 6px;
   line-height: 1;
+}
+
+.top-row p .highlight.show {
+  color: #000;
 }
 
 .option-row .option-item {
@@ -857,8 +917,8 @@ footer .tab-item .tab-name {
   padding: 10px 20px;
   font-size: 1.5rem;
   background-color: #fff;
-  color: #63d4aa;
   border: 1px solid #999;
+  color: #999;
   vertical-align: middle;
 }
 
@@ -882,5 +942,18 @@ footer .tab-item .tab-name {
 
 .explain-row p {
   font-size: 1.6rem;
+}
+
+.bottom-modal .modal-header {
+  border-bottom: none;
+}
+
+.bottom-modal .modal-body {
+  color: #999;
+}
+
+.bottom-modal .modal-footer {
+  border-top: none;
+  padding-bottom: 2rem;
 }
 /*# sourceMappingURL=exam.css.map */

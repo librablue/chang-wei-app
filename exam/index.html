@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>隨堂測驗</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/exam.css" />
+	</head>
+	<body>
+		<div class="header">
+			<img src="https://fakeimg.pl/768x700/" />
+			<div class="header-content">
+				<div class="back-row">
+					<a href="../index.html" class="link-back">
+						<img class="img-fluid" src="../static/image/icon-back-white.png" alt="" />
+					</a>
+				</div>
+				<h1>Man Who Ate $120,000 Banana at Art Show Says 'I'm not Sorry'</h1>
+				<div class="tag-row">
+					<span class="tag-white">初級</span>
+					<span class="tag-white">生活</span>
+					<span class="tag-white">藝術</span>
+				</div>
+			</div>
+		</div>
+		<div class="task-list-container">
+			<ul class="task-list">
+				<li>
+					<a href="#" class="link-task active" data-toggle="modal" data-target="#confirmModal">
+						<div class="img-wrap">
+							<img class="reward" src="../static/image/icon-reward-active.png" alt="" />
+						</div>
+						<span class="title">
+							1. 文章閱讀
+							<img class="like" src="../static/image/icon-like.png" alt="" />
+						</span>
+						<span class="status">已完成 &gt;</span>
+					</a>
+				</li>
+				<li>
+					<a href="exam1.html" class="link-task">
+						<div class="img-wrap">
+							<img class="reward" src="../static/image/icon-reward.png" alt="" />
+						</div>
+						<span class="title">
+							2. 單字預習
+							<img class="like" src="../static/image/icon-like.png" alt="" />
+						</span>
+						<span class="status">未開始 &gt;</span>
+					</a>
+				</li>
+				<li>
+					<a href="exam1.html" class="link-task active">
+						<div class="img-wrap">
+							<img class="reward" src="../static/image/icon-reward-active.png" alt="" />
+						</div>
+						<span class="title">
+							3. 老師講解
+							<img class="like" src="../static/image/icon-like.png" alt="" />
+						</span>
+						<span class="status">已完成 &gt;</span>
+					</a>
+				</li>
+				<li>
+					<a href="exam1.html" class="link-task">
+						<div class="img-wrap">
+							<img class="reward" src="../static/image/icon-reward.png" alt="" />
+						</div>
+						<span class="title">
+							4. 單字複習
+							<img class="like" src="../static/image/icon-like.png" alt="" />
+						</span>
+						<span class="status">未開始 &gt;</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="link-task">
+						<div class="img-wrap">
+							<img class="reward" src="../static/image/icon-reward.png" alt="" />
+						</div>
+						<span class="title">
+							5. 隨堂測驗
+							<img class="like" src="../static/image/icon-like.png" alt="" />
+						</span>
+						<span class="status">未開始 &gt;</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 提示 start -->
+		<div class="modal fade bottom-modal" id="confirmModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">隨堂測驗</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<img src="../static/image/icon-close.png" alt="" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<p class="text-center">選擇想要的測驗方式</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="cw-btn cw-btn-round cw-btn-green">錯題重測</a>
+						<a href="#" class="cw-btn cw-btn-round cw-btn-green">從頭測驗</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 提示 end -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>
