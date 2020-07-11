@@ -12,6 +12,10 @@ body.bg-green-100 {
   background-color: #eaf6f3;
 }
 
+body.bg-grey {
+  background-color: #f0f0f0;
+}
+
 body.task-complete {
   background-image: url("../image/complete-bg.jpg");
   background-repeat: no-repeat;
@@ -72,7 +76,7 @@ img {
   padding: 4px 16px;
 }
 
-.cw-btn[disable] {
+.cw-btn[disabled] {
   background-color: #c9c9c9;
 }
 
@@ -1527,6 +1531,7 @@ footer .tab-item .tab-name {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1rem;
 }
 
 .ask-modal .modal-content .ctrl-row .btn-file {
@@ -1534,11 +1539,6 @@ footer .tab-item .tab-name {
   background-color: transparent;
   width: 32px;
   padding: 0;
-}
-
-.ask-modal .modal-content .ctrl-row .cw-btn {
-  background-color: #d8d8d8;
-  color: #fff;
 }
 
 .ask-modal .modal-content .gallary-row {

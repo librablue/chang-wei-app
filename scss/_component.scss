@@ -5,7 +5,7 @@
 .cw-btn {
 	border: none;
 	padding: 4px 16px;
-	&[disable] {
+	&[disabled] {
 		background-color: #c9c9c9;
 	}
 }

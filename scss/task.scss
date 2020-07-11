@@ -391,15 +391,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 1rem;
             .btn-file {
                 border: none;
                 background-color: transparent;
                 width: 32px;
                 padding: 0;
-            }
-            .cw-btn {
-                background-color: #d8d8d8;
-                color: #fff;
             }
         }
         .gallary-row {
