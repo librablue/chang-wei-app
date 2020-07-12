@@ -121,6 +121,11 @@ img {
   border: 1px solid #c1c1c6;
 }
 
+.tag-white.active {
+  background-color: #4cc8ae;
+  color: #fff !important;
+}
+
 .tag-grey {
   border-radius: 50px;
   padding: 2px 8px;
@@ -215,6 +220,41 @@ img {
 .cw-tab .tab-link.active {
   color: #000;
   border-bottom: 2px solid #00ccad;
+}
+
+.cw-tab.pill .tab-link {
+  padding: 4px 16px;
+}
+
+.cw-tab.pill .tab-link.active {
+  color: #fff;
+  background-color: #4cc8ae;
+  border-bottom: none;
+  border-radius: 50px;
+}
+
+.ribbon-link {
+  position: relative;
+  display: block;
+  color: #2e2e2e;
+  background-image: url("../image/imgbacktest.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 8px 12px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.ribbon-link:hover {
+  color: #2e2e2e;
+}
+
+.ribbon-link:after {
+  content: '\003e';
+  position: absolute;
+  right: 16px;
 }
 
 footer {
@@ -815,30 +855,6 @@ h2 {
 .hot-row .tag-row {
   position: relative;
   text-align: right;
-}
-
-.ribbon-link {
-  position: relative;
-  display: block;
-  color: #2e2e2e;
-  background-image: url("../image/imgbacktest.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 1.4rem;
-  width: 100%;
-  padding: 8px 12px;
-  margin: 20px 0;
-  border-radius: 10px;
-}
-
-.ribbon-link:hover {
-  color: #2e2e2e;
-}
-
-.ribbon-link:after {
-  content: '\003e';
-  position: absolute;
-  right: 16px;
 }
 
 .learn-row .learn-item {

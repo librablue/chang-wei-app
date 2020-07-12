@@ -113,28 +113,6 @@ h2 {
 	}
 }
 
-.ribbon-link {
-	position: relative;
-	display: block;
-	color: #2e2e2e;
-	background-image: url('../image/imgbacktest.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-	font-size: 1.4rem;
-	width: 100%;
-	padding: 8px 12px;
-	margin: 20px 0;
-    border-radius: 10px;
-    &:hover {
-        color: #2e2e2e;
-    }
-	&:after {
-		content: '\003e';
-		position: absolute;
-		right: 16px;
-	}
-}
-
 .learn-row {
 	.learn-item {
 		position: relative;
