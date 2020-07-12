@@ -1,0 +1,151 @@
+@import './config';
+@import './component';
+@import './mixin';
+
+@include task-header;
+@include task-list-container;
+
+.cw-nav {
+	margin-top: 1rem;
+}
+.header {
+	h1,
+	h2 {
+		text-align: center;
+		color: #fff;
+		margin: 2rem 0;
+	}
+
+	&.helf {
+		.header-content {
+			width: 50%;
+			padding: 0;
+			top: 50%;
+			right: 0;
+			left: auto;
+			transform: translateY(-50%);
+			* {
+				text-align: left;
+				color: #4cc8ae;
+			}
+			h1 {
+				font-size: 3rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            .link-detail {
+                font-size: 1.6rem;
+            }
+		}
+	}
+}
+
+.task-list-container {
+	.title-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 1rem;
+		.title {
+			font-size: 2rem;
+			font-weight: 700;
+		}
+		.count {
+			color: #d6d5da;
+		}
+	}
+}
+
+.side-nav {
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		li {
+			&.active {
+				a {
+					color: #5bcdb6;
+				}
+			}
+			a {
+				display: block;
+				padding: 10px 12px;
+				color: #9c9c9c;
+				background-color: #eaf6f4;
+				margin-bottom: 2px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.theme-box {
+	position: relative;
+	img {
+		border-radius: 10px;
+	}
+	.link-theme {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.intro {
+		position: absolute;
+		bottom: 0;
+		padding: 10px;
+		color: #fff;
+		.title {
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.hot-row {
+	position: relative;
+	margin-bottom: 1.6rem;
+	.right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.img-wrap {
+		position: relative;
+		.mask {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			opacity: 0.8;
+			text-align: center;
+			border-radius: 10px 10px 0 0;
+			padding: 2px 0;
+			&.premium {
+				background-color: #44b69f;
+				color: #fff;
+			}
+			&.free {
+				background-color: #fbd711;
+			}
+		}
+		img {
+			border-radius: 10px;
+		}
+	}
+	h3 {
+		font-family: 'Roboto', 'sans-serif';
+		color: #2e2e2e;
+		font-size: 1.6rem;
+		font-weight: 700;
+	}
+	p {
+		color: #c1c1c6;
+		margin-bottom: 6px;
+	}
+	.tag-row {
+		position: relative;
+		text-align: right;
+	}
+}
