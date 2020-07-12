@@ -1,0 +1,66 @@
+@charset "UTF-8";
+html,
+body {
+  font-size: 10px;
+}
+
+body {
+  font-family: "微軟正黑體", "sans-serif";
+}
+
+body.bg-green-100 {
+  background-color: #eaf6f3;
+}
+
+body.bg-grey {
+  background-color: #f0f0f0;
+}
+
+body.task-complete {
+  background-image: url("../image/complete-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button:focus,
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.row-pd-helf {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.row-pd-helf div[class^=col] {
+  padding: 4px;
+}
+
+@media (min-width: 375px) {
+  .row-pd-helf {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+  }
+  .row-pd-helf div[class^=col] {
+    padding: 7.5px;
+  }
+}
+.modal.modal-static .modal-dialog {
+  transform: none;
+}
+
+/*# sourceMappingURL=my.css.map */

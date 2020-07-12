@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/my.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+
+    body {
+      position: relative;
+    }
+
+    .title {
+      font-size: 24px;
+      position: absolute;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+
+    .top {
+      height: 64px;
+    }
+
+    .settingimg {
+      position: relative;
+      top: 30px;
+      left: 78%;
+    }
+
+    .calendarimg {
+      position: relative;
+      top: 30px;
+      left: 83%;
+      margin-right: 30px;
+    }
+
+    .card {
+      border: none !important;
+      margin-top: 20px;
+    }
+
+    .rightNowLogin {
+      font-size: 17px;
+      position: absolute;
+      top: 19px;
+      left: 22px;
+      color: #fff;
+    }
+
+    .loginTip {
+      font-size: 13px;
+      position: absolute;
+      top: 47px;
+      left: 22px;
+      color: #fff;
+      font-family: "PingFangTC-Regular";
+    }
+
+    .profileImg {
+      width: 46px;
+      height: 46px;
+      position: absolute;
+      top: 19px;
+      right: 22px;
+    }
+
+    .btnBlock {
+      width: 125px;
+      height: 107px;
+      padding: 0;
+    }
+
+    .setCenter {
+      position: absolute;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -45%);
+    }
+
+    .txt {
+      font-size: 14px;
+      position: absolute;
+      left: 50%;
+      top: 75%;
+      transform: translate(-50%, -50%);
+    }
+
+    .btnArea {
+      position: relative;
+      top: 11px;
+    }
+
+    .appBottom {
+      width: 100%;
+      height: 49px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px grey;
+    }
+
+    .txtBtnMaster {
+      font-size: 10px;
+      color: rgb(193 193 198);
+      text-align: center;
+    }
+
+    .btnMaster {
+      width: 94px;
+      height: 49px;
+      padding: 0;
+      padding-top: 2px;
+    }
+
+    .imgBtnMaster {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .bottomBlock {
+      width: 100%;
+      height: 49px;
+      margin-top: 20px;
+    }
+
+    .grayBlock {
+      width: 100%;
+      height: 10px;
+      background-color: rgb(252 252 252);
+      margin: 10px 0 10px 0;
+    }
+
+    .btnlist {
+      display: inline-flex;
+      margin: 10px;
+      width: 90%;
+    }
+
+    .txtDrection {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      position: absolute;
+      right: 30px;
+    }
+
+    .txtDrection2 {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
+
+    .txtlist {
+      margin-left: 10px;
+    }
+
+    .inlineList {
+      display: inline-flex;
+    }
+
+    .level {
+      font-size: 10px;
+      position: absolute;
+      top: 22px;
+      left: 112px;
+      color: rgb(236 118 118);
+      width: 32px;
+      height: 18px;
+      border-radius: 9px;
+      background-color: rgb(255 217 210);
+      text-align: center;
+    }
+
+    .cameraImg {
+      position: absolute;
+      top: 50px;
+      right: 22px;
+    }
+
+    .txtUpVIP {
+      color: rgb(71 71 71);
+      font-size: 12px;
+      padding: 8px;
+      z-index: 10;
+      margin-left: 10px;
+    }
+
+    .upBar {
+      position: absolute;
+      top: 85px;
+      display: inline-flex;
+      width: 100%;
+    }
+
+    .rightNowUp {
+      font-size: 12px;
+      color: rgb(231 174 113);
+      width: 68px;
+      height: 26px;
+      border-radius: 13px;
+      background-color: #fff;
+      text-align: center;
+      padding: 4px;
+      top: 8px;
+      position: relative;
+      right: -205px;
+      top: -23px;
+    }
+
+    .imgRibonTail {
+      position: relative;
+      right: 4px;
+    }
+
+    .imgRibonHead {
+      position: absolute;
+      left: -15px;
+      top: -14px;
+    }
+
+    .testBar {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .txtTest {
+      font-size: 14px;
+      color: rgb(46 46 46);
+      position: absolute;
+      top: 5px;
+      left: 10px;
+    }
+
+    .imglvUpBackHead {
+      height: 6px;
+      position: relative;
+      top: 35px;
+    }
+
+    @media (min-width: 667px) {
+      .imglvUpBackHead {
+        height: 6px;
+        width: 10px;
+        position: relative;
+        top: 35px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .txt {
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        top: 75%;
+        transform: translate(-50%, -50%);
+      }
+
+      .txtlist {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+
+      .imgRibonHead {
+        position: absolute;
+        left: -12px;
+        top: -5px;
+        width: inherit;
+      }
+
+      .txtUpVIP {
+        color: rgb(71 71 71);
+        font-size: 12px;
+        padding-top: 12px;
+        padding-left: 3px;
+        z-index: 10;
+        margin-left: 0px;
+      }
+
+      .rightNowUp {
+        font-size: 12px;
+        color: rgb(231 174 113);
+        width: 60px;
+        height: 20px;
+        border-radius: 13px;
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        right: -182px;
+        top: -20px;
+        line-height: 12px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="top">
+    <div class="title">我的</div>
+    <img class="settingimg" src="img/icNavSetting24.png" alt="">
+    <img class="calendarimg" src="img/icNavCalendar24.png" alt="">
+  </div>
+  <div class="card">
+    <img src="img/imgMeMember.png" alt="">
+    <div class="inlineList">
+      <div class="rightNowLogin">Wei Chang</div>
+      <div class="level">高級</div>
+    </div>
+    <img class="profileImg" src="img/icProfileimgNull46smile.png" alt="">
+    <img class="cameraImg" src="img/icCamWBgWhite14.png" alt="">
+    <div class="upBar">
+      <img class="imglvUpBackHead" src="img/lvUpBackHead.png" alt="">
+      <img class="imgRibonHead" src="img/lvUpBack.png" alt="">
+      <div class="txtUpVIP">升級為 VIP 會員，解鎖更多課程！
+        <div class="rightNowUp">立即升級</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="btnArea">
+    <div class="row">
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icNoteBlack32.png" alt="">
+        <div class="txt setCenter">學習紀錄</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeFav32.png" alt="">
+        <div class="txt setCenter">我的收藏</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeMyprogram32.png" alt="">
+        <div class="txt setCenter">我的課程</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeOfflineaudio32.png" alt="">
+        <div class="txt setCenter">離線收聽</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeAccount32.png" alt="">
+        <div class="txt setCenter">會員資料</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeNotice32.png" alt="">
+        <div class="txt setCenter">訊息中心</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeQhistery32.png" alt="">
+        <div class="txt setCenter">發問紀錄</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMePurchaseorder32.png" alt="">
+        <div class="txt setCenter">訂購紀錄</div>
+      </div>
+      <div class="btnBlock col">
+        <img class="setCenter" src="img/icMeCs32.png" alt="">
+        <div class="txt setCenter">聯絡客服</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grayBlock"></div>
+<div class="container">
+  <div class="btnlist">
+    <img src="img/icMeQ18.png" alt="">
+    <div class="txtlist">常見問題</div>
+    <div class="txtDrection">></div>
+  </div>
+  <div class="btnlist">
+    <img src="img/icMePp18.png" alt="">
+    <div class="txtlist">隱私權政策</div>
+    <div class="txtDrection">></div>
+  </div>
+  <div class="btnlist">
+    <img src="img/icMeUserstrategy18.png" alt="">
+    <div class="txtlist">用戶條款</div>
+    <div class="txtDrection">></div>
+  </div>
+</div>
+<div class="bottomBlock"></div>
+<div class="container-fluid">
+  <div class="appBottom">
+    <div class="row">
+      <div class="btnMaster col">
+        <img class="imgBtnMaster" src="img/icTabHomeUnselected.png" alt="">
+        <div class="txtBtnMaster">首頁</div>
+      </div>
+      <div class="btnMaster col">
+        <img class="imgBtnMaster" src="img/icTabDailyessayUnselected.png" alt="">
+        <div class="txtBtnMaster">每日學習</div>
+      </div>
+      <div class="btnMaster col">
+        <img class="imgBtnMaster" src="img/icTabCourseUnselected.png" alt="">
+        <div class="txtBtnMaster">深度學習</div>
+      </div>
+      <div class="btnMaster col">
+        <img class="imgBtnMaster" src="img/icTabMeSelected.png" alt="">
+        <div class="txtBtnMaster">我的</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

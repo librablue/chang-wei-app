@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../static/css/my.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    .top {
+      height: 64px;
+    }
+
+    .profileBar {
+      position: relative;
+      top: 26px;
+      display: inline-flex;
+      width: 100%;
+    }
+
+    .txtProfile {
+      font-size: 17px;
+      color: rgb(71 71 71);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .imgBlock {
+      position: relative;
+      top: 38px;
+    }
+
+    .imgHeader {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .txtTitle {
+      font-size: 15px;
+      color: rgb(71 71 71);
+    }
+
+    .txtContent {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      text-align: right;
+      width: 70%;
+    }
+
+
+    .topblock {
+      height: 180px;
+    }
+
+    .listBtn {
+      width: 100%;
+      padding: 20px;
+      display: inline-flex;
+    }
+
+    .txtDirection {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      margin-left: 12px;
+    }
+
+    .btnSave {
+      width: 305px;
+      height: 46px;
+      border-radius: 23px;
+      background-color: rgb(75 200 174);
+      color: #fff;
+      text-align: center;
+      line-height: 46px;
+      margin-top: 80px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .txtContentDate {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      text-align: right;
+      width: 70%;
+      border: none;
+    }
+
+    .txtContentSex {
+      font-size: 15px;
+      color: rgb(153 153 153);
+      text-align: right;
+      width: 70%;
+      border: none;
+      -webkit-appearance: none;
+      appearance: none;
+      direction: rtl;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+
+    @media (max-width: 320px) {
+      .txtDirection {
+        font-size: 15px;
+        color: rgb(153 153 153);
+        position: relative;
+        left: 10px;
+      }
+
+      .txtTitle {
+        font-size: 13px;
+        color: rgb(71 71 71);
+        position: relative;
+        top: 3px;
+      }
+
+      .txtContent {
+        font-size: 14px;
+        color: rgb(153 153 153);
+        text-align: right;
+        width: 70%;
+        position: relative;
+        right: -15px;
+      }
+
+      .txtContentDate {
+        font-size: 14px;
+        color: rgb(153 153 153);
+        text-align: right;
+        width: 70%;
+        border: none;
+        position: relative;
+        right: -15px;
+      }
+
+      .txtContentSex {
+        font-size: 14px;
+        color: rgb(153 153 153);
+        text-align: right;
+        width: 70%;
+        border: none;
+        position: relative;
+        right: -15px;
+      }
+
+      .btnSave {
+        width: 270px;
+        height: 46px;
+        border-radius: 23px;
+        background-color: rgb(75 200 174);
+        color: #fff;
+        text-align: center;
+        line-height: 46px;
+        margin-top: 10px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div class="container topblock">
+  <div class="top">
+    <div class="profileBar">
+      <img class="" src="img/Profile/icNavBackBlack24.png" alt="">
+      <div class="txtProfile">會員資料</div>
+    </div>
+  </div>
+  <div class="imgBlock">
+    <img class="imgHeader" src="img/Profile/icProfileimgNull64.png" alt="">
+  </div>
+</div>
+<div class="container">
+  <div class="listBtn">
+    <div style="width:60px" class="txtTitle">名稱</div>
+    <div class="txtContent">Wei Chang</div>
+    <div class="txtDirection">></div>
+  </div>
+  <div class="listBtn">
+    <div class="txtTitle">手機號碼</div>
+    <div class="txtContent">0912345678</div>
+    <div class="txtDirection">></div>
+  </div>
+  <div class="listBtn">
+    <div class="txtTitle">電子郵件</div>
+    <div class="txtContent">learningenglish@gmail.com</div>
+    <div class="txtDirection">></div>
+  </div>
+  <div class="listBtn">
+    <div style="width:60px" class="txtTitle">生日</div>
+    <input type="date" class="txtContentDate" value="1990-01-01"/>
+    <div class="txtDirection">></div>
+  </div>
+  <div class="listBtn">
+    <div style="width:60px" class="txtTitle">性別</div>
+    <select class="txtContentSex">
+      <option value="men">男</option>
+      <option value="women">女</option>
+    </select>
+    <div class="txtDirection">></div>
+  </div>
+</div>
+<div class="container">
+  <div class="btnSave">儲存</div>
+</div>
+</body>
+</html>

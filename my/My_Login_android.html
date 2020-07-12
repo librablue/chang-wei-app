@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/my.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .top {
+      font-size: 17px;
+      color: rgb(46 46 46);
+      width: 100%;
+      height: 50px;
+      border-radius: 20px 20px 0 0;
+      background-color: #fff;
+      text-align: center;
+      line-height: 50px;
+    }
+
+    .loginBack {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .loginWin {
+      width: 100%;
+    }
+
+    .blockBack {
+      width: 100%;
+      height: 582px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px grey;
+    }
+
+    .imgCancer {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+
+    .imgLoginWay {
+      width: 58px;
+      height: 58px;
+    }
+
+    .OrUseMobile {
+      display: inline-flex;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 130px;
+    }
+
+    .hrType {
+      width: 79px;
+      color: rgb(226 227 228);
+    }
+
+    .txtUseMobile {
+      font-size: 13px;
+      color: rgb(186 187 192);
+      margin-top: 5px;
+      padding: 0 5px 0 5px;
+    }
+
+    .enterEmail {
+      font-size: 12px;
+      color: rgb(193 193 198);
+      margin-top: 5px;
+      padding: 0 5px 0 5px;
+      position: relative;
+      top: 100px;
+      text-align: center;
+    }
+
+    .txtType {
+      font-size: 15px;
+      color: rgb(46 46 46);
+      border: none;
+    }
+
+    .txtMobileContent {
+      font-size: 15px;
+      color: rgb(46 46 46);
+      border: none;
+      width: 140px;
+      margin-left: 5px;
+    }
+
+    .sendNum {
+      color: #fff;
+      background-color: rgb(218 218 223);
+      width: 72px;
+      height: 23px;
+      font-size: 12px;
+      border-radius: 2px;
+      line-height: 23px;
+      text-align: center;
+    }
+
+    .enterMobile {
+      display: inline-flex;
+      position: relative;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+
+    .enterNum {
+      display: inline-flex;
+      position: relative;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 293px;
+    }
+
+    .agree {
+      position: relative;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-flex;
+    }
+
+    .txtagree {
+      font-size: 13px;
+      color: rgb(193 193 198);
+      margin-left: 5px;
+      display: inline-flex;
+    }
+
+    .btnProtocol {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .btnLogin {
+      width: 305px;
+      height: 46px;
+      background-color: rgb(75 200 174);
+      border-radius: 23px;
+      color: #fff;
+      line-height: 46px;
+      text-align: center;
+      position: relative;
+      top: 130px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 15px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .setCenter {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 100px;
+      display: inline-flex;
+    }
+
+    .setPosition {
+      position: relative;
+      top: 50px;
+    }
+
+    .marginLR10 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="loginWin">
+  <div class="loginBack">
+    <div class="top">登入
+      <img class="imgCancer" src="img/login/icCloseBlack22.png" alt="">
+    </div>
+    <div class="blockBack">
+      <div class="setCenter">
+        <img class="imgLoginWay marginLR10" src="img/login/icFacebook.png" alt="">
+        <img class="imgLoginWay marginLR10" src="img/login/icGoogle.png" alt="">
+        <img class="imgLoginWay marginLR10" src="img/login/icLine.png" alt="">
+
+      </div>
+      <div class="container">
+        <div class="OrUseMobile">
+          <hr class="hrType">
+          <div class="txtUseMobile">或使用手機驗證登入：)</div>
+          <hr class="hrType">
+        </div>
+        <div class="setPosition">
+          <div class="enterEmail">請輸入電子郵件</div>
+          <div class="enterMobile">
+            <img style="height:18px;margin-top: 4px" src="img/login/icTablePhone18.png" alt="">
+            <select class="txtType">
+              <option value="+886">+886</option>
+            </select>
+            <input type="text" class="txtMobileContent" value="0912346789">
+            <div class="sendNum">發送驗證碼</div>
+
+          </div>
+          <hr style="position: relative;top:85px;width: 293px;">
+
+          <div class="enterEmail">請輸入驗證碼</div>
+          <div class="enterNum">
+            <img style="height:18px;margin-top: 4px" src="img/login/ic_table_keycode_18.png" alt="">
+            <input type="text" class="txtMobileContent" value="337665">
+          </div>
+          <hr style="position: relative;top:85px;width: 293px;">
+
+          <div class="agree">
+            <input style="margin-top: 3px;" type="checkbox">
+            <div class="txtagree">我已閱讀並同意
+              <div class="btnProtocol">用戶協議</div>
+              <div>及</div>
+              <div class="btnProtocol">隱私權政策</div>
+            </div>
+          </div>
+          <div class="btnLogin">進入張維英文</div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+</div>
+</body>
+</html>
