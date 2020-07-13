@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: "微軟正黑體", "sans-serif";
+  font-family: '微軟正黑體', 'sans-serif';
 }
 
 body.bg-green-100 {
@@ -27,6 +27,7 @@ body.task-complete {
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -46,7 +47,8 @@ img {
   margin-left: -4px;
   margin-right: -4px;
 }
-.row-pd-helf div[class^=col] {
+
+.row-pd-helf div[class^='col'] {
   padding: 4px;
 }
 
@@ -55,12 +57,13 @@ img {
     margin-left: -7.5px;
     margin-right: -7.5px;
   }
-  .row-pd-helf div[class^=col] {
+  .row-pd-helf div[class^='col'] {
     padding: 7.5px;
   }
 }
-.modal.modal-static .modal-dialog {
-  transform: none;
-}
 
+.modal.modal-static .modal-dialog {
+  -webkit-transform: none;
+          transform: none;
+}
 /*# sourceMappingURL=my.css.map */
