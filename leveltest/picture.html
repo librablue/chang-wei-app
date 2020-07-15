@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>等級測驗</title>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/css/exam.css" />
+	</head>
+	<body class="bg-green">
+		<div class="cw-container pb-0">
+			<nav class="cw-nav">
+				<a href="./index.html" class="link-back">
+					<img class="img-fluid" src="../static/image/icon-close-lg.png" alt="" />
+				</a>
+				<div class="title"></div>
+				<a href="#" class="img-action"> </a>
+			</nav>
+		</div>
+		<div class="loading" style="width:30%"></div>
+		<div class="cw-container">
+			<div class="exam-card">
+				<div class="play-row">
+					<!-- class 用 active 切換狀態 -->
+					<a href="#" class="link-record">
+						<img class="img-fluid icon-record" src="../static/image/icon-speaker.png" alt="" />
+					</a>
+					<div>聽錄音作答</div>
+				</div>
+				<h1>Where is the cat?</h1>
+				<div class="row picture-row">
+					<div class="col-6">
+						<a href="#" class="pic-item">
+							<img class="img-fluid img-option" src="https://fakeimg.pl/400x400/" alt="" />
+							<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="pic-item correct">
+							<img class="img-fluid img-option" src="https://fakeimg.pl/400x400/" alt="" />
+							<img class="icon-status" src="../static/image/icon-correct.png" alt="" />
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="pic-item error">
+							<img class="img-fluid img-option" src="https://fakeimg.pl/400x400/" alt="" />
+							<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+						</a>
+					</div>
+					<div class="col-6">
+						<a href="#" class="pic-item">
+							<img class="img-fluid img-option" src="https://fakeimg.pl/400x400/" alt="" />
+							<img class="icon-status" src="../static/image/icon-error.png" alt="" />
+						</a>
+					</div>
+					<div class="col-8 col-sm-6 col-md-4">
+						<button type="button" class="cw-btn">不清楚答案</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</body>
+</html>

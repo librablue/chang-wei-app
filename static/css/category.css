@@ -144,6 +144,15 @@ img {
   margin: 0 auto;
 }
 
+.cw-container.full-w {
+  padding: 0;
+}
+
+.cw-container.full-w .cw-nav {
+  padding: 10px 15px;
+  margin: 0;
+}
+
 @media (min-width: 576px) {
   .cw-container {
     max-width: 540px;
@@ -927,6 +936,7 @@ footer .tab-item .tab-name {
 }
 
 .header.helf .header-content h1 {
+  font-family: '微軟正黑體', 'sans-serif';
   font-size: 3rem;
 }
 

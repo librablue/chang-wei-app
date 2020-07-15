@@ -65,6 +65,13 @@
 .cw-container {
 	padding: 20px 15px;
 	margin: 0 auto;
+	&.full-w {
+		padding: 0;
+		.cw-nav {
+			padding: 10px 15px;
+			margin: 0;
+		}
+	}
 }
 
 @media (min-width: 576px) {
