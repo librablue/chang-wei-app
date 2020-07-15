@@ -16,6 +16,10 @@ body.bg-grey {
   background-color: #f0f0f0;
 }
 
+body.bg-green {
+  background-color: #eaf6f4;
+}
+
 body.task-complete {
   background-image: url("../image/complete-bg.jpg");
   background-repeat: no-repeat;
@@ -1010,5 +1014,148 @@ footer .tab-item .tab-name {
 .bottom-modal .modal-footer {
   border-top: none;
   padding-bottom: 2rem;
+}
+
+.poster-container {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.poster-container .poster-title {
+  text-align: center;
+  font-weight: 700;
+  color: #4cc8ae;
+}
+
+.poster-container .poster-title .larger {
+  font-size: 2em;
+}
+
+.poster-container .poster-img {
+  padding: 1rem 3rem 0;
+}
+
+.poster-container .link-history {
+  color: #4f4f57;
+  font-size: 1.4rem;
+  margin: 1rem 0 3rem;
+}
+
+.countdown-container {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.countdown-container .countdown-title {
+  text-align: center;
+  font-weight: 700;
+  color: #4cc8ae;
+  margin-top: 5rem;
+}
+
+.countdown-container .countdown {
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 10rem;
+  color: #565656;
+  font-weight: 700;
+  margin: 8rem 0;
+}
+
+.loading {
+  background-color: #4cc8ae;
+  height: 4px;
+}
+
+.exam-card {
+  position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 2rem;
+  min-height: calc(100vh - 110px);
+}
+
+.exam-card .time-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9b9b9b;
+}
+
+.exam-card .time-row .icon-clock {
+  width: 16px;
+  margin-right: 4px;
+}
+
+.exam-card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+
+.exam-card p {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.exam-card p.result {
+  color: #4cc8ae;
+}
+
+.exam-card p .error {
+  color: #ee7c7c;
+}
+
+.exam-card .record-row {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.exam-card .record-row .link-record {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #e3f7f5;
+  background: #e3f7f5;
+  padding: 14px;
+  margin: 16px 0;
+}
+
+.exam-card .record-row .link-record.active {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
 }
 /*# sourceMappingURL=exam.css.map */

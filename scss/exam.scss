@@ -6,7 +6,7 @@
 @include task-list-container;
 
 .header {
-    padding-top: 700 / 768 * 100%;
+	padding-top: 700 / 768 * 100%;
 	overflow: hidden;
 	&:after {
 		content: '';
@@ -20,20 +20,6 @@
 		bottom: -140px;
 	}
 }
-
-// .task-list-container {
-//     	&:before {
-// 		content: '';
-// 		display: block;
-// 		width: 120%;
-// 		height: 100px;
-// 		border-radius: 50%;
-// 		background-color: #fff;
-// 		position: absolute;
-// 		left: -10%;
-// 		top: -50px;
-// 	}
-// }
 
 .top-row {
 	display: flex;
@@ -126,5 +112,111 @@
 	.modal-footer {
 		border-top: none;
 		padding-bottom: 2rem;
+	}
+}
+
+.poster-container {
+	margin-top: 2rem;
+	margin-bottom: 6rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.poster-title {
+		text-align: center;
+		font-weight: 700;
+		color: #4cc8ae;
+		.larger {
+			font-size: 2em;
+		}
+	}
+	.poster-img {
+		padding: 1rem 3rem 0;
+	}
+	.link-history {
+		color: #4f4f57;
+		font-size: 1.4rem;
+		margin: 1rem 0 3rem;
+	}
+}
+
+.countdown-container {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.countdown-title {
+		text-align: center;
+		font-weight: 700;
+		color: #4cc8ae;
+		margin-top: 5rem;
+	}
+	.countdown {
+		font-family: 'Roboto', 'sans-serif';
+		font-size: 10rem;
+		color: #565656;
+		font-weight: 700;
+		margin: 8rem 0;
+	}
+}
+
+.loading {
+	background-color: #4cc8ae;
+	height: 4px;
+}
+
+.exam-card {
+	position: relative;
+	border-radius: 20px;
+	background-color: #fff;
+	padding: 2rem;
+	min-height: calc(100vh - 110px);
+	.time-row {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		color: #9b9b9b;
+		.icon-clock {
+			width: 16px;
+			margin-right: 4px;
+		}
+	}
+	h1 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin: 2rem 0;
+	}
+	p {
+		font-size: 1.6rem;
+		line-height: 2;
+		font-weight: 700;
+		&.result {
+			color: #4cc8ae;
+		}
+		.error {
+			color: #ee7c7c;
+		}
+	}
+	.record-row {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		.link-record {
+			display: inline-block;
+			width: 64px;
+			height: 64px;
+			border-radius: 50%;
+			border: 1px solid #e3f7f5;
+			background: #e3f7f5;
+			padding: 14px;
+			margin: 16px 0;
+			&.active {
+				position: relative;
+				background-color: #fff;
+				border: 1px solid #999;
+			}
+		}
 	}
 }
