@@ -966,6 +966,15 @@ footer .tab-item .tab-name {
   font-size: 1.6rem;
 }
 
+@media (min-width: 768px) {
+  .header.report.helf .header-content h1 {
+    font-size: 5rem;
+  }
+  .header.report.helf .header-content h2 {
+    font-size: 2.4rem;
+  }
+}
+
 .top-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1493,7 +1502,7 @@ p.intro {
   list-style-type: none;
   margin: 0;
   margin-bottom: 80px;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .result-list .year {
